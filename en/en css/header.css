@@ -4,23 +4,82 @@ a{
     text-decoration: none;
 }
 body{
-    background-color: black;
+    background-image: url('../../image/hero.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-position: calc(50% + 0px) calc(50% + 80px);    background-color: black;
+    background-attachment: fixed;
 }
 
 /* ===============topHeader============== */
 .header {
     display: grid;
-    grid-template-columns: 0.78fr 0.47fr 2.84fr 1.42fr 0.31fr 0.15fr;
-    grid-template-rows: 0.3fr 0.6fr 2.1fr;
+    /* "sM sM  adr adr adr lang"
+    ". logo menuTxt menuTxt titleDT ."
+    "heroS heroS heroS heroS heroS heroS"; */
+    /* header
+    8fr 2fr 3fr - 7.8fr -39.2fr 8.13 -24.33fr- 5.16fr -2.5fr
+    
+        "sM sM sM sM  adr adr adr adr lang"
+        ". . . logo menuTxt menuTxt menuTxt titleDT ."
+        "heroS heroS heroS heroS heroS heroS heroS heroS heroS";
+
+    hero
+    8fr - 2fr - 3fr 7.8fr 39.2fr - 8.13 24.33fr 5.16fr 2.5fr */
+
+    /* ". dash wel wel wel . . . ."
+    ".  slog slog slog slog . . . ."
+    ". detai detai detai detai  . . . ."  */
+
+
+    /* grid-template-columns: 13fr 7.8fr 47.33fr 24.33fr 5.16fr 2.5fr; */
+    grid-template-columns: 8fr 2fr 3fr 7.8fr 39.2fr 8.13 24.33fr 5.16fr 2.5fr;
+
+
+
+    /* grid-template-columns: 0.78fr 0.47fr 2.84fr 1.42fr 0.31fr 0.15fr; */
+    
+    grid-template-rows: 10fr 20fr 10fr 30fr 30fr;
     grid-template-areas: 
-        "sM sM adr adr adr lang"
-        ". logo menuTxt menuTxt titleDT ."
-        ". . . . . .";
+        "sM sM sM sM  adr adr adr adr lang"
+        ". . . logo menuTxt menuTxt menuTxt titleDT ."
+        "heroS heroS heroS heroS heroS heroS heroS heroS heroS"
+        ". dash wel wel wel . . . ."
+    ".  slog slog slog slog . . . ."
+    ". detai detai detai detai  . . . .";
     /* width: 100%;  */
     /* Ensure full width to align areas */
     /* background-color: brown; */
+    gap:0;
 }
-
+/* ================hero section=========== */
+/* .heroSec{
+    grid-area: heroS;
+     grid-template-columns: 8fr 2fr 50fr 40fr;
+     grid-template-rows: 10fr 40fr 30fr 20fr;
+     grid-template-areas: 
+     ". dash wel ."
+     ". slog slog ."
+     ". detai detai ." ;   
+    } */
+    .dash{
+        grid-area: dash;
+    }
+    .welcom{
+    grid-area: wel;
+    }
+    .slogan{
+        grid-area:slog;
+    
+    }
+    .sloganSpecial{
+        grid-area: slog;
+    }
+    .heroDetails{
+        grid-area:detai ;
+    }
+/* ======================================= */
 
 .socialMedia{
     position:relative;
@@ -29,12 +88,12 @@ body{
     transform: translate(-3%,-12px);
     background-image: url("../en pic/En laptop social media bg - FFD700 laptop.svg");
     background-repeat: no-repeat;
-    /* background-color: blue; */
+    background-color: black;
     background-size: 100%; 
     width: 128.5%;
     /* height: 100px; */
     /* order:2; */
-    z-index: 3;
+    z-index: 0;
 
     
 
@@ -62,10 +121,12 @@ body{
     }
     .addresses {
         grid-area: adr;
-        /* background-color: black; */
+        background-color: black;
+        background-size: 240%;
+        background-position:0% -50%;
         width: 100%;
         order: 1;
-        z-index: 0;
+        z-index: -1;
         height: -20px;
         /* color: white; */
     }
@@ -77,6 +138,8 @@ body{
         /*  padding: 0; */
         margin-left: 90px; 
         transform: translate(0%,-51%);
+        background-color: black;
+
     }
     
     .item {
@@ -109,7 +172,7 @@ body{
         grid-area:lang;
         width: 100%; 
          transform: translate(5%, -5%);
-        /* background-color: green; */
+        background-color: black;
     }
     .lang ul{
         gap:5px;
@@ -117,6 +180,8 @@ body{
         flex-direction: column;
         list-style: none;
         justify-content: space-between;
+        background-color: black;
+
 
     }
 
