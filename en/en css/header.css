@@ -38,7 +38,22 @@
     font-weight: normal;
     font-style: normal;
     }
-
+    @font-face {
+        font-family: 'normal_font2_100';
+        src: url('../en font/Kanit-100.woff2') format('woff2'), /* Modern browsers */
+                url('../en font/Kanit-100.woff') format('woff'),   /* Older browsers */
+                url('../en font/Kanit-100.ttf') format('truetype'); /* Fallback */
+        font-weight: normal;
+        font-style: normal;
+        }
+        @font-face {
+            font-family: 'normal_font3_200';
+            src: url('../en font/Kanit-200.woff2') format('woff2'), /* Modern browsers */
+                    url('../en font/Kanit-200.woff') format('woff'),   /* Older browsers */
+                    url('../en font/Kanit-200.ttf') format('truetype'); /* Fallback */
+            font-weight: normal;
+            font-style: normal;
+            }
 a{
     color:white;
     text-decoration: none;
@@ -95,16 +110,16 @@ body{
     width: 100%; 
     /* Ensure full width to align areas */
     /* background-color: brown; */
-    gap:0;
+    /* gap:0; */
 
-
+z-index: -2;
 }
 /* except language black bg for top header */
 .bgTopHeader{
     grid-column: 1 /span 4;
     grid-row:1;
     background-color: black;
-    z-index: -2;
+    z-index: -3;
     transform: translateY(-8px);
     width:150%;
     height:95%;
@@ -123,13 +138,16 @@ body{
     .dash{
         grid-area: dash;
         color: rgb(255, 215, 0);
+        transform: translateY(-30px);
+        font-size: 50px;
+        /* font-weight: 1000; */
     }
     .welcom{
     grid-area: wel;
     font-family: 'normal_font', sans-serif;
     color: rgb(255, 215, 0);
-    
-    font-size: 25px;
+    margin-left: 10px;
+    font-size: 30px;
     }
     @font-face {
         font-family: 'sloganFont';
@@ -154,10 +172,11 @@ body{
     }
     .heroDetails{
         grid-area:detai ;
-        font-family: 'normal_font', sans-serif;
+        font-family: 'normal_font3_200', sans-serif;
         color:white;
-        
-        font-size: 100%;
+        margin-top: 7%;
+        font-size: 150%;
+        font-weight: -100px;
     }
 /* ======================================= */
 
@@ -173,7 +192,7 @@ body{
     width: 128.5%;
     /* height: 100px; */
     /* order:2; */
-    z-index: 0;
+    z-index: 4;
 
     
 
@@ -206,7 +225,7 @@ body{
         background-position:0% -50%;
         width: 100%;
         order: 1;
-        z-index: -1;
+        z-index: 3;
         height: -20px;
         /* color: white; */
     }
@@ -327,6 +346,7 @@ body{
     /* background-size: 85%; */
     transform: translate(-5%,-12%);
     /* background-color: brown; */
+    z-index: 5;
 }
 
 @font-face {
@@ -360,6 +380,7 @@ transform: translate(9.5%,-9%);
     /* gap:22px; */
 
     /* flex:0 1 11%; */
+    z-index: 10;
 }
 .menu_text{
     /* flex:1 1 10%; */
@@ -397,4 +418,5 @@ transform: translate(9.5%,-9%);
     transform: translate(-51%,-13%);
 
     font-size: 200%;
+    z-index: 5;
 }
