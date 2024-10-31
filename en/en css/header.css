@@ -123,23 +123,10 @@ z-index: -2;
     /* background-color:rgb(34, 33, 33); */
 
     z-index: -3;
-    transform: translateY(-8px);
+    transform: translateY(-15px);
     width:100.50%;
-    height:109%;
+    /* height:10px; */
     /* z-index: 2; */
-}
-.bgTopHeaderRightConner{
-    grid-column: 9 ;
-    grid-row:1;
-    /* background-color:rgb(9, 9, 9); */
-    /* background-color:rgb(34, 33, 33); */
-    font-family: normal_font2_100;
-    font-size: 60px;
-    color: rgb(43, 43, 44);
-    z-index: 5;
-    transform: translateY(-8px);
-    width:100.35%;
-    height:109%;   
 }
 /* ================hero section=========== */
 /* .heroSec{
@@ -206,7 +193,7 @@ z-index: -2;
     background-repeat: no-repeat;
     /* background-color: black; */
     background-size: 95%; 
-    width: 121.5%;
+    width: 123.5%;
     /* height: 100px; */
     /* order:2; */
     z-index: 4;
@@ -237,8 +224,8 @@ z-index: -2;
     }
     .addresses {
         grid-area: adr;
-        background-color: black;
-        background-size: 240%;
+        /* background-color: black; */
+        /* background-size: 240%; */
         /* background-position:0% 79px; */
         width: 100%;
         order: 1;
@@ -253,7 +240,7 @@ z-index: -2;
         gap: 10px; /* Adjust space between each item as needed */
         /*  padding: 0; */
         margin-left: 90px; 
-        transform: translate(0%,-30%);
+        transform: translate(-3%,-35%);
         /* background-color: black; */
 
     }
@@ -263,6 +250,13 @@ z-index: -2;
         align-items: center;
         gap: 5px; /* Adjust space between icon and text as needed */
         /* background-color: tomato; */
+    }
+    .item:nth-child(1){
+        margin-right: 2%;
+    }
+
+    .item:nth-child(2){
+        margin-right: 2%;
     }
     
     .icon_address img {
@@ -285,11 +279,22 @@ z-index: -2;
     }
     
 /* language part */
+.dividerLang{
+    grid-column: 9;
+    grid-row: 1;
+    font-family:normal_font2_100 ;
+    color: rgb(69, 70, 70);
+    font-size:40px;
+    /* background-color: blue; */
+    /* z-index: 0; */
+
+}
     .lang{
         grid-area:lang;
         width: 100%; 
-         transform: translate(-7%, -5%);
+         transform: translate(-7%, -15%);
         /* background-color: black; */
+        z-index: 2;
     }
     .lang ul{
         gap:5px;
@@ -348,7 +353,7 @@ z-index: -2;
 
 .logo img{
     /* background-color: tomato; */
-    transform: translate(7%,-17%);
+    transform: translate(-9%,-20%);
     width:160%;
     /* height: 230px; */
     /* flex:1,1,15%; */
@@ -360,9 +365,9 @@ z-index: -2;
     grid-area:menuTxt;
     background-image: url("../en pic/En laptop bg logo,menu and title.svg");
     background-repeat: no-repeat; 
-    width: 122%;
+    width: 124%;
     /* background-size: 85%; */
-    transform: translate(-5%,-12%);
+    transform: translate(-5.3%,-12.5%);
     /* background-color: brown; */
     z-index: 5;
 }
@@ -388,7 +393,7 @@ flex-wrap: wrap;
 
 width:110%;
 height:130px;
-transform: translate(9.5%,-9%);
+transform: translate(8%,-9%);
 
 /* background-color: blue; */
 }
@@ -433,7 +438,7 @@ transform: translate(9.5%,-9%);
     font-family: 'davudtech_font', sans-serif; 
     color:black;
     align-items: center;
-    transform: translate(-51%,-13%);
+    transform: translate(-51%,-14%);
 
     font-size: 200%;
     z-index: 5;
