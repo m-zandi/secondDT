@@ -99,7 +99,16 @@ body{
 
 
 }
-
+/* except language black bg for top header */
+.bgTopHeader{
+    grid-column: 1 /span 4;
+    grid-row:1;
+    background-color: black;
+    z-index: -2;
+    transform: translateY(-8px);
+    width:150%;
+    height:95%;
+}
 /* ================hero section=========== */
 /* .heroSec{
     grid-area: heroS;
@@ -360,8 +369,15 @@ transform: translate(9.5%,-9%);
     font-family: 'menu_font', sans-serif; 
     color:white;
     font-size: 260%;
+    /* margin-left: 1%; */
+}
+.ElectroMTxt {
+    margin-left: 1%;
 }
 
+.learningsTxt, .resumeTxt{
+    margin-left: -1%;
+}
 @font-face {
     font-family: 'davudtech_font';
     src: url('../en font/AntonSC-Regular.woff2') format('woff2'), /* Modern browsers */
