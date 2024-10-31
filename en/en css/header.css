@@ -1,6 +1,31 @@
-.fullScreen {
-    position: fixed;
-    top: 6%;
+
+body{
+    /* position: relative;
+    top: 0%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../../image/hero.png');
+    background-size: cover;
+    background-position: 0px 40%;
+    background-repeat: no-repeat;
+    background-color: black;
+    z-index: -10; */
+    overflow-x: hidden;
+}
+html,body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: black; 
+    z-index:-10;
+}
+.bgImageToAllHero {
+    /* grid-column: 1/span8; */
+    /* position: absolute; */
+    top: 0%;
     right: 0;
     bottom: 0;
     left: 0;
@@ -10,23 +35,28 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-color: black;
     z-index: -10;
 }
+
+
 /* <div class="full-screen_transparent"></div> */
 .fullScreenTransparent {
     position: fixed;
+    grid-column: 1/span9;
+    grid-row: auto;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color:  black;
+    background-color: black;
     opacity: 0.7;
-    /* background-size: cover;
+    background-size: cover;
     background-position: center;
-    background-repeat: no-repeat; */
-    z-index: -1;
+    background-repeat: no-repeat;
+    z-index: 0;
 }
 
 /* @media screen and (min-width:30em){ */
@@ -70,6 +100,7 @@ a{
 
 /* ===============topHeader============== */
 .header {
+    /* position: relative; */
     display: grid;
     /* "sM sM  adr adr adr lang"
     ". logo menuTxt menuTxt titleDT ."
@@ -98,6 +129,8 @@ a{
 
 
     grid-template-columns: 8fr 2fr 3fr 7.8fr 39.2fr 8.13fr 24.33fr 5.16fr 2.5fr;
+    /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+    overflow-x: hidden;
     grid-template-rows: auto;
     grid-template-areas: 
     "sM sM sM sM  adr adr adr adr lang"
@@ -122,7 +155,7 @@ z-index: -2;
     background-color:black;
     /* background-color:rgb(34, 33, 33); */
 
-    z-index: -3;
+    z-index:0;
     transform: translateY(-15px);
     width:100.50%;
     /* height:10px; */
@@ -152,6 +185,7 @@ z-index: -2;
     color: rgb(255, 215, 0);
     margin-left: 10px;
     font-size: 30px;
+    z-index: 1;
     }
     @font-face {
         font-family: 'sloganFont';
@@ -167,11 +201,13 @@ z-index: -2;
         color: white;
 
         font-size:80px;
-    
+        z-index: 1;
+
     }
     .sloganSpecial{
         grid-area: slog;
         color: rgb(255, 215, 0);
+        z-index: 1;
 
     }
     .heroDetails{
@@ -181,6 +217,8 @@ z-index: -2;
         margin-top: 7%;
         font-size: 150%;
         font-weight: -100px;
+        z-index: 1;
+
     }
 /* ======================================= */
 
@@ -286,13 +324,13 @@ z-index: -2;
     color: rgb(69, 70, 70);
     font-size:40px;
     /* background-color: blue; */
-    /* z-index: 0; */
+    z-index: 1;
 
 }
     .lang{
         grid-area:lang;
         width: 100%; 
-         transform: translate(-7%, -15%);
+         transform: translate(-20%, -15%);
         /* background-color: black; */
         z-index: 2;
     }
@@ -362,12 +400,14 @@ z-index: -2;
 /* menu yellow bg as well */
 .menu{
     position:relative;
-    grid-area:menuTxt;
+    /* grid-area:menuTxt; */
+    grid-column: 4/span5;
+    grid-row:2;
     background-image: url("../en pic/En laptop bg logo,menu and title.svg");
     background-repeat: no-repeat; 
-    width: 124%;
+    width: 87%;
     /* background-size: 85%; */
-    transform: translate(-5.3%,-12.5%);
+    transform: translate(5%,-11.5%);
     /* background-color: brown; */
     z-index: 5;
 }
@@ -382,20 +422,21 @@ z-index: -2;
     }
 /* gray menu bg */
 .menu ul {
+grid-column:4/span3;
 background-image: url("../en pic/En laptop menu bg.svg");
 background-repeat: no-repeat;
 background-size: 55%;
 gap:1.6%;
 display: flex;
-flex-direction: row;
-justify-content: stretch;
-flex-wrap: wrap;
+/* flex-direction: row; */
+/* flex-wrap: wrap; */
 
 width:110%;
 height:130px;
 transform: translate(8%,-9%);
+/* background-color: aqua; */
+z-index: 20;
 
-/* background-color: blue; */
 }
 .menu li{
     transform: translate(-29%,9%);
@@ -442,4 +483,13 @@ transform: translate(8%,-9%);
 
     font-size: 200%;
     z-index: 5;
+}
+.firstDivider{
+    position: relative;
+    background-position: 0% -100%;
+    background-image: url("../en pic/En_laptop first divider.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height:33vh;
 }
