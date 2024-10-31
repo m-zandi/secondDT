@@ -1,15 +1,55 @@
+.fullScreen {
+    position: fixed;
+    top: 6%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../../image/hero.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -10;
+}
+/* <div class="full-screen_transparent"></div> */
+.fullScreenTransparent {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color:  black;
+    opacity: 0.7;
+    /* background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; */
+    z-index: -1;
+}
+
 /* @media screen and (min-width:30em){ */
+@font-face {
+    font-family: 'normal_font';
+    src: url('../en font/Kanit-Regular.woff2') format('woff2'), /* Modern browsers */
+            url('../en font/Kanit-Regular.woff') format('woff'),   /* Older browsers */
+            url('../en font/Kanit-Regular.ttf') format('truetype'); /* Fallback */
+    font-weight: normal;
+    font-style: normal;
+    }
+
 a{
     color:white;
     text-decoration: none;
 }
 body{
-    background-image: url('../../image/hero.png');
+    /* background-image: url('../../image/hero.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-position: calc(50% + 0px) calc(50% + 80px);    background-color: black;
-    background-attachment: fixed;
+    background-attachment: fixed; */
 }
 
 /* ===============topHeader============== */
@@ -34,25 +74,32 @@ body{
 
 
     /* grid-template-columns: 13fr 7.8fr 47.33fr 24.33fr 5.16fr 2.5fr; */
-    grid-template-columns: 8fr 2fr 3fr 7.8fr 39.2fr 8.13 24.33fr 5.16fr 2.5fr;
 
-
-
-    /* grid-template-columns: 0.78fr 0.47fr 2.84fr 1.42fr 0.31fr 0.15fr; */
     
-    grid-template-rows: 10fr 20fr 10fr 30fr 30fr;
+    /* grid-template-columns: 0.78fr 0.47fr 2.84fr 1.42fr 0.31fr 0.15fr; */
+
+
+
+
+    grid-template-columns: 8fr 2fr 3fr 7.8fr 39.2fr 8.13fr 24.33fr 5.16fr 2.5fr;
+    grid-template-rows: auto;
     grid-template-areas: 
-        "sM sM sM sM  adr adr adr adr lang"
-        ". . . logo menuTxt menuTxt menuTxt titleDT ."
-        "heroS heroS heroS heroS heroS heroS heroS heroS heroS"
-        ". dash wel wel wel . . . ."
-    ".  slog slog slog slog . . . ."
-    ". detai detai detai detai  . . . .";
-    /* width: 100%;  */
+    "sM sM sM sM  adr adr adr adr lang"
+    ". . . logo menuTxt menuTxt menuTxt titleDT test"
+    ". dash wel wel wel . . . ."
+    ". slog slog slog slog slog . . ."
+    ". detai detai detai detai . . . .";
+
+
+
+    width: 100%; 
     /* Ensure full width to align areas */
     /* background-color: brown; */
     gap:0;
+
+
 }
+
 /* ================hero section=========== */
 /* .heroSec{
     grid-area: heroS;
@@ -63,21 +110,45 @@ body{
      ". slog slog ."
      ". detai detai ." ;   
     } */
+
     .dash{
         grid-area: dash;
+        color: rgb(255, 215, 0);
     }
     .welcom{
     grid-area: wel;
+    font-family: 'normal_font', sans-serif;
+    color: rgb(255, 215, 0);
+    
+    font-size: 25px;
     }
-    .slogan{
+    @font-face {
+        font-family: 'sloganFont';
+        src: url('../en font/ZenDots-Regular.woff2') format('woff2'),
+             url('../en font/ZenDots-Regular.woff') format('woff'),
+             url('../en font/ZenDots-Regular.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+    .slogan ,.sloganSpecial{
         grid-area:slog;
+        font-family: 'sloganFont', sans-serif;
+        color: white;
+
+        font-size:80px;
     
     }
     .sloganSpecial{
         grid-area: slog;
+        color: rgb(255, 215, 0);
+
     }
     .heroDetails{
         grid-area:detai ;
+        font-family: 'normal_font', sans-serif;
+        color:white;
+        
+        font-size: 100%;
     }
 /* ======================================= */
 
@@ -89,7 +160,7 @@ body{
     background-image: url("../en pic/En laptop social media bg - FFD700 laptop.svg");
     background-repeat: no-repeat;
     background-color: black;
-    background-size: 100%; 
+    /* background-size: 100%;  */
     width: 128.5%;
     /* height: 100px; */
     /* order:2; */
@@ -188,7 +259,7 @@ body{
 
 
     @font-face {
-        font-family: 'bold_language';
+        font-family: 'normal_bold_font';
         src: url('../en font/Kanit-SemiBold.woff2') format('woff2'), /* Modern browsers */
                 url('../en font/Kanit-SemiBold.woff') format('woff'),   /* Older browsers */
                 url('../en font/Kanit-SemiBold.ttf') format('truetype'); /* Fallback */
@@ -198,25 +269,18 @@ body{
 
     .lang li:nth-child(1){
         transform: translateX(-45%);
-        font-family: 'bold_language', sans-serif;
+        font-family: 'normal_bold_font', sans-serif;
         color: white;
         font-size: 15px;  
         /* background-color: brown; */
 
     }
-    @font-face {
-        font-family: 'normal_language';
-        src: url('../en font/Kanit-Regular.woff2') format('woff2'), /* Modern browsers */
-                url('../en font/Kanit-Regular.woff') format('woff'),   /* Older browsers */
-                url('../en font/Kanit-Regular.ttf') format('truetype'); /* Fallback */
-        font-weight: normal;
-        font-style: normal;
-        }
+
 
     .lang li:nth-child(2) {
         
 
-        font-family: 'normal_language', sans-serif;
+        font-family: 'normal_font', sans-serif;
         color: white;
         
         font-size: 12px;
