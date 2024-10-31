@@ -58,14 +58,15 @@ a{
     color:white;
     text-decoration: none;
 }
-body{
-    /* background-image: url('../../image/hero.png');
+
+/* body{
+    background-image: url('../../image/hero.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-position: calc(50% + 0px) calc(50% + 80px);    background-color: black;
-    background-attachment: fixed; */
-}
+    background-attachment: fixed;
+} */
 
 /* ===============topHeader============== */
 .header {
@@ -114,15 +115,31 @@ body{
 
 z-index: -2;
 }
-/* except language black bg for top header */
+/* except language black bg for top header except lang */
 .bgTopHeader{
-    grid-column: 1 /span 4;
+    grid-column: 5 /span 9;
     grid-row:1;
-    background-color: black;
+    background-color:black;
+    /* background-color:rgb(34, 33, 33); */
+
     z-index: -3;
     transform: translateY(-8px);
-    width:150%;
-    height:95%;
+    width:100.50%;
+    height:109%;
+    /* z-index: 2; */
+}
+.bgTopHeaderRightConner{
+    grid-column: 9 ;
+    grid-row:1;
+    /* background-color:rgb(9, 9, 9); */
+    /* background-color:rgb(34, 33, 33); */
+    font-family: normal_font2_100;
+    font-size: 60px;
+    color: rgb(43, 43, 44);
+    z-index: 5;
+    transform: translateY(-8px);
+    width:100.35%;
+    height:109%;   
 }
 /* ================hero section=========== */
 /* .heroSec{
@@ -187,9 +204,9 @@ z-index: -2;
     transform: translate(-3%,-12px);
     background-image: url("../en pic/En laptop social media bg - FFD700 laptop.svg");
     background-repeat: no-repeat;
-    background-color: black;
-    /* background-size: 100%;  */
-    width: 128.5%;
+    /* background-color: black; */
+    background-size: 95%; 
+    width: 121.5%;
     /* height: 100px; */
     /* order:2; */
     z-index: 4;
@@ -222,7 +239,7 @@ z-index: -2;
         grid-area: adr;
         background-color: black;
         background-size: 240%;
-        background-position:0% -50%;
+        /* background-position:0% 79px; */
         width: 100%;
         order: 1;
         z-index: 3;
@@ -236,8 +253,8 @@ z-index: -2;
         gap: 10px; /* Adjust space between each item as needed */
         /*  padding: 0; */
         margin-left: 90px; 
-        transform: translate(0%,-51%);
-        background-color: black;
+        transform: translate(0%,-30%);
+        /* background-color: black; */
 
     }
     
@@ -245,6 +262,7 @@ z-index: -2;
         display: flex;
         align-items: center;
         gap: 5px; /* Adjust space between icon and text as needed */
+        /* background-color: tomato; */
     }
     
     .icon_address img {
@@ -270,8 +288,8 @@ z-index: -2;
     .lang{
         grid-area:lang;
         width: 100%; 
-         transform: translate(5%, -5%);
-        background-color: black;
+         transform: translate(-7%, -5%);
+        /* background-color: black; */
     }
     .lang ul{
         gap:5px;
@@ -279,7 +297,7 @@ z-index: -2;
         flex-direction: column;
         list-style: none;
         justify-content: space-between;
-        background-color: black;
+        /* background-color: black; */
 
 
     }
