@@ -33,7 +33,7 @@ html,body{
     height: 100vh;
     background-image: url('../../image/hero.png');
     background-size: cover;
-    background-position: center;
+    background-position: 0% 45.5%;
     background-repeat: no-repeat;
     background-color: black;
     z-index: -10;
@@ -226,7 +226,7 @@ z-index: -2;
     position:relative;
 
     grid-area:sM;
-    transform: translate(-3%,-12px);
+    transform: translate(-1%,-4px);
     background-image: url("../en pic/En laptop social media bg - FFD700 laptop.svg");
     background-repeat: no-repeat;
     /* background-color: black; */
@@ -278,7 +278,7 @@ z-index: -2;
         gap: 10px; /* Adjust space between each item as needed */
         /*  padding: 0; */
         margin-left: 90px; 
-        transform: translate(-3%,-35%);
+        transform: translate(-3%,-23%);
         /* background-color: black; */
 
     }
