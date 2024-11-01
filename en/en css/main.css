@@ -173,10 +173,42 @@
     font-size: 100%;          
 }
 
-.aboutExperties{
-    grid-column:10;
-    grid-row: 5;
+.aboutPros{
+    grid-column: 13/span 6;
+    grid-row: 6; 
+    display:flex;
+    flex-direction: column;
+    gap:9%;
+    font-family: 'normal_font', sans-serif;
+    color:white;
+    
+
 }
+.aboutIcon{
+    width: 3%;
+}
+.aboutExperties{
+    display: flex;
+    align-items: center;
+    gap:5px;
+
+}
+
+
+
+.aboutAccurate{
+    display: flex;
+    align-items: center;
+    gap:5px;
+}
+
+.aboutQuality{
+    display: flex;
+    align-items: center;
+    gap:5px;
+}
+
+
 .aboutEmergency{
     grid-column:10;
     grid-row: 5;
