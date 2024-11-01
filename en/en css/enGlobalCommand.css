@@ -10,12 +10,13 @@ body{
     left: 0;
     width: 100vw;
     height: 100vh; 
-    background-color:black;
      overflow-x: hidden;
 }
 html,body{
     height: 100%;
     margin: 0;
     padding: 0;
+    background-color:black;
+
     z-index:-10;
 }
