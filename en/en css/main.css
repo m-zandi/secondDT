@@ -15,12 +15,12 @@
     background-position: 0% 45.5%;
     background-repeat: no-repeat;
     /* background-color: rgb(222, 25, 25); */
-    z-index: -2;
+    z-index: -1;
 }
 
 
 .fullScreenTransparent {
-    position: fixed;
+    position:absolute;
     /* grid-column: 1/span9; */
     /* grid-row: auto; */
     top: 0;
@@ -34,7 +34,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    z-index: -10;
+    z-index: -1;
 }
 
 
@@ -46,6 +46,7 @@
         grid-template-columns: repeat(40,1fr);
         grid-template-rows: auto;
         width:100%;
+        z-index: 10;
         
 
     }
@@ -55,6 +56,11 @@
         grid-row:1;
         display: flex;
         flex-direction: row;
+        text-shadow: 
+        0px 0px 2px black, /* Top-left outline */
+        0px 0px 2px black,  /* Top-right outline */
+        0px 0px 0px black,  /* Bottom-left outline */
+        0px 0px 0px black;   /* Bottom-right outline */
 
         }
     
@@ -65,6 +71,7 @@
         font-size: 50px;
         /* background-color: aqua; */
         z-index: 2;
+ 
 
     }
     .welcomText{
@@ -76,6 +83,7 @@
     }
 
     .slogan {
+        position: relative;
         margin-top: 3.5%;
         grid-column: 4/span 20 ;
         grid-row:5;
@@ -85,6 +93,11 @@
 
         font-size:450%;
         z-index: 2;
+        text-shadow: 
+        0px 0px 15px black, /* Top-left outline */
+        0px 0px 15px black,  /* Top-right outline */
+        0px 0px 0px black,  /* Bottom-left outline */
+        0px 0px 0px black;   /* Bottom-right outline */
 
     }
     .sloganSpecial{
@@ -104,11 +117,16 @@
         font-size: 150%;
         text-align: justify;            
         z-index: 1;
+        text-shadow: 
+        0px 0px 2px black, /* Top-left outline */
+        0px 0px 2px black,  /* Top-right outline */
+        0px 0px 0px black,  /* Bottom-left outline */
+        0px 0px 0px black;   /* Bottom-right outline */
 
     }
+    /* ---------- first divider ------ */
 .firstDivider{
     position: relative;
-    /* background-position: 0% 0%; */
     background-image: url("../en pic/En_laptop first divider.svg");
     background-repeat: no-repeat;
     background-size: 100%;
@@ -127,7 +145,7 @@
     overflow-x: hidden;
     grid-template-rows: 10;
     width: 100%; 
-    z-index: -2; 
+    z-index: 10; 
 }
  .aboutImage{
     grid-column: 3/span 7;
@@ -289,7 +307,7 @@
     background-size: 100%;
     width: 100%;
     height:47.4%;
-    z-index: 5;
+    z-index: -2;
 }
 
  /* ------/ portfolio ------ */

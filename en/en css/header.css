@@ -39,8 +39,8 @@
     background-image: url("../en pic/En laptop social media bg - FFD700 laptop.svg");
     background-repeat: no-repeat;
     /* background-color: black; */
-    background-size: 95%; 
-    width: 123.5%;
+    background-size: 100%; 
+    width: 118.5%;
     /* height: 100px; */
     /* order:2; */
     z-index: 4;
@@ -173,14 +173,18 @@
     grid-area:logo;
     width:100%;
     /* background-color: tomato; */
+    
     z-index: 10;
 
 }
 
 .logo img{
     /* background-color: tomato; */
-    transform: translate(-9%,-20%);
+    transform: translate(0%,-18%);
     width:160%;
+    /* box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); */
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
+
     /* height: 230px; */
     /* flex:1,1,15%; */
 }
