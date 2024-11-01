@@ -5,7 +5,9 @@
 
 /* ================hero section=========== */
 .bgImageToAllHero {
-    grid-column: 1/span8; 
+    /* grid-column: 1/span8;  */
+    position: relative;
+
     top: 0%;
     right: 0;
     bottom: 0;
@@ -16,15 +18,15 @@
     background-size: cover;
     background-position: 0% 45.5%;
     background-repeat: no-repeat;
-    background-color: rgb(222, 25, 25);
-    z-index: -10;
+    /* background-color: rgb(222, 25, 25); */
+    z-index: -2;
 }
 
 
 .fullScreenTransparent {
     position: fixed;
-    grid-column: 1/span9;
-    grid-row: auto;
+    /* grid-column: 1/span9; */
+    /* grid-row: auto; */
     top: 0;
     right: 0;
     bottom: 0;
@@ -36,7 +38,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    z-index: 0;
+    z-index: -1;
 }
 
 
@@ -76,6 +78,7 @@
         font-family: 'normal_font', sans-serif;
         color:white;
         margin-top: 7%;
+        margin-bottom: 5%;
         font-size: 150%;
         font-weight: -100px;
         z-index: 1;
@@ -83,10 +86,11 @@
     }
 .firstDivider{
     position: relative;
-    background-position: 0% -200%;
+    background-position: 0% 0%;
     background-image: url("../en pic/En_laptop first divider.svg");
     background-repeat: no-repeat;
     background-size: 100%;
-    width: 100%;
-    height:33vh;
+    width: 99.1%;
+    height:47.4%;
+    z-index: 5;
 }
