@@ -257,4 +257,9 @@ z-index: 20;
     transform: translate(-51%,-13%);
     font-size: 200%;
     z-index: 5;
+    text-shadow: 
+    0px 0px 15px rgb(255, 215, 0), /* Top-left outline */
+    0px 0px 15px rgb(255, 215, 0),  /* Top-right outline */
+    0px 0px 0px rgb(255, 215, 0),  /* Bottom-left outline */
+    0px 0px 0px rgb(255, 215, 0);   /* Bottom-right outline */
 }

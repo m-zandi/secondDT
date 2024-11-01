@@ -123,6 +123,11 @@
     display:flex;
     grid-column: 13/span 4;
     grid-row: 2;
+    text-shadow: 
+    0px 0px 15px black, /* Top-left outline */
+    0px 0px 15px black,  /* Top-right outline */
+    0px 0px 0px black,  /* Bottom-left outline */
+    0px 0px 0px black;   /* Bottom-right outline */
 }
 
  .aboutCompany span:nth-child(1){
@@ -130,6 +135,7 @@
     color: rgb(255, 215, 0);
     transform: translateY(-30px);
     font-size: 50px;
+
 }
 .aboutCompany span:nth-child(2){
     
@@ -138,6 +144,9 @@
     color: rgb(255, 215, 0);
     font-size: 200%;
     z-index: 1;
+    text-shadow: 
+
+
 }
 
 .aboutSlogan{
@@ -148,11 +157,21 @@
     font-family:sloganFont ;
     font-size: 230%;;
     /* text-align: justify; */
+    text-shadow: 
+    0px 0px 5px black, /* Top-left outline */
+    0px 0px 5px black,  /* Top-right outline */
+    0px 0px 0px black,  /* Bottom-left outline */
+    0px 0px 0px black;   /* Bottom-right outline */
 
 }
 
 .aboutTitleColor {
     color: rgb(255, 215, 0);
+    text-shadow: 
+    0px 0px 15px black, /* Top-left outline */
+    0px 0px 15px black,  /* Top-right outline */
+    0px 0px 0px black,  /* Bottom-left outline */
+    0px 0px 0px black;   /* Bottom-right outline */
 
 }
 
@@ -164,6 +183,11 @@
     font-family: 'normal_font', sans-serif;
     color:white;
     display: flex;
+    text-shadow: 
+    0px 0px 2px black, /* Top-left outline */
+    0px 0px 2px black,  /* Top-right outline */
+    0px 0px 0px black,  /* Bottom-left outline */
+    0px 0px 0px black;   /* Bottom-right outline */
 
 }
 .aboutDetails p{
@@ -181,11 +205,15 @@
     gap:9%;
     font-family: 'normal_font', sans-serif;
     color:white;
-    
+    text-shadow: 
+    0px 0px 2px black, /* Top-left outline */
+    0px 0px 2px black,  /* Top-right outline */
+    0px 0px 0px black,  /* Bottom-left outline */
+    0px 0px 0px black;   /* Bottom-right outline */
 
 }
 .aboutIcon{
-    width: 3%;
+    width: 15px;
 }
 .aboutExperties{
 
@@ -217,6 +245,11 @@
     color:white;
     font-family: 'normal_font', sans-serif;
     gap:9%;
+    text-shadow: 
+    0px 0px 2px black, /* Top-left outline */
+    0px 0px 2px black,  /* Top-right outline */
+    0px 0px 0px black,  /* Bottom-left outline */
+    0px 0px 0px black;   /* Bottom-right outline */
 }
 
 
