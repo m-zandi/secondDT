@@ -80,7 +80,7 @@
         margin-top: 7%;
         margin-bottom: 5%;
         font-size: 150%;
-        font-weight: -100px;
+        text-align: justify;            
         z-index: 1;
 
     }
@@ -93,4 +93,91 @@
     width: 99.1%;
     height:47.4%;
     z-index: 5;
+}
+
+/* --------- about ---------- */
+.about{
+    /* position: relative; */
+
+    margin-top: 20%;
+    display: grid;
+    grid-template-columns: repeat(20,1fr);
+    overflow-x: hidden;
+    grid-template-rows: 10;
+
+    width: 100%; 
+    z-index: -2; 
+}
+ .aboutImage{
+    grid-column: 3/span 7;
+    grid-row: 1/span 10;
+    width: 120%;
+    height: 100vh;
+    background-image: url('../../image/about.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+ }
+
+.aboutCompany{
+    color: white;
+    display:flex;
+    grid-column: 13/span 4;
+    grid-row: 2;
+}
+
+ .aboutCompany span:nth-child(1){
+
+    color: rgb(255, 215, 0);
+    transform: translateY(-30px);
+    font-size: 50px;
+}
+.aboutCompany span:nth-child(2){
+    
+    margin-left: 5%;
+    font-family: 'normal_font_bold', sans-serif;
+    color: rgb(255, 215, 0);
+    font-size: 200%;
+    z-index: 1;
+}
+
+.aboutSlogan{
+    display:flex;
+    grid-column: 13/span 7 ;
+    grid-row: 3;
+    color: white;
+    font-family:sloganFont ;
+    font-size: 230%;;
+    /* text-align: justify; */
+
+}
+
+.aboutTitleColor {
+    color: rgb(255, 215, 0);
+
+}
+
+
+.aboutDetails{
+    grid-column: 13/span 6;
+    grid-row: 4;
+    margin-top: 7%;
+    font-family: 'normal_font', sans-serif;
+    color:white;
+    display: flex;
+
+}
+.aboutDetails p{
+
+    width: 100%;
+    text-align: justify;  
+    font-size: 100%;          
+}
+
+.aboutExperties{
+    grid-column:10;
+    grid-row: 5;
+}
+.aboutEmergency{
+    grid-column:10;
+    grid-row: 5;
 }
