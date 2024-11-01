@@ -1,135 +1,11 @@
 
-body{
-    /* position: relative;
-    top: 0%;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-image: url('../../image/hero.png');
-    background-size: cover;
-    background-position: 0px 40%;
-    background-repeat: no-repeat;
-    background-color: black;
-    z-index: -10; */
-    overflow-x: hidden;
-}
-html,body{
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    background-color: black; 
-    z-index:-10;
-}
-.bgImageToAllHero {
-    /* grid-column: 1/span8; */
-    /* position: absolute; */
-    top: 0%;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-image: url('../../image/hero.png');
-    background-size: cover;
-    background-position: 0% 45.5%;
-    background-repeat: no-repeat;
-    background-color: black;
-    z-index: -10;
-}
+ 
 
-
-/* <div class="full-screen_transparent"></div> */
-.fullScreenTransparent {
-    position: fixed;
-    grid-column: 1/span9;
-    grid-row: auto;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: black;
-    opacity: 0.7;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    z-index: 0;
-}
-
-/* @media screen and (min-width:30em){ */
-@font-face {
-    font-family: 'normal_font';
-    src: url('../en font/Kanit-Regular.woff2') format('woff2'), /* Modern browsers */
-            url('../en font/Kanit-Regular.woff') format('woff'),   /* Older browsers */
-            url('../en font/Kanit-Regular.ttf') format('truetype'); /* Fallback */
-    font-weight: normal;
-    font-style: normal;
-    }
-    @font-face {
-        font-family: 'normal_font2_100';
-        src: url('../en font/Kanit-100.woff2') format('woff2'), /* Modern browsers */
-                url('../en font/Kanit-100.woff') format('woff'),   /* Older browsers */
-                url('../en font/Kanit-100.ttf') format('truetype'); /* Fallback */
-        font-weight: normal;
-        font-style: normal;
-        }
-        @font-face {
-            font-family: 'normal_font3_200';
-            src: url('../en font/Kanit-200.woff2') format('woff2'), /* Modern browsers */
-                    url('../en font/Kanit-200.woff') format('woff'),   /* Older browsers */
-                    url('../en font/Kanit-200.ttf') format('truetype'); /* Fallback */
-            font-weight: normal;
-            font-style: normal;
-            }
-a{
-    color:white;
-    text-decoration: none;
-}
-
-/* body{
-    background-image: url('../../image/hero.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-position: calc(50% + 0px) calc(50% + 80px);    background-color: black;
-    background-attachment: fixed;
-} */
 
 /* ===============topHeader============== */
 .header {
-    /* position: relative; */
     display: grid;
-    /* "sM sM  adr adr adr lang"
-    ". logo menuTxt menuTxt titleDT ."
-    "heroS heroS heroS heroS heroS heroS"; */
-    /* header
-    8fr 2fr 3fr - 7.8fr -39.2fr 8.13 -24.33fr- 5.16fr -2.5fr
-    
-        "sM sM sM sM  adr adr adr adr lang"
-        ". . . logo menuTxt menuTxt menuTxt titleDT ."
-        "heroS heroS heroS heroS heroS heroS heroS heroS heroS";
-
-    hero
-    8fr - 2fr - 3fr 7.8fr 39.2fr - 8.13 24.33fr 5.16fr 2.5fr */
-
-    /* ". dash wel wel wel . . . ."
-    ".  slog slog slog slog . . . ."
-    ". detai detai detai detai  . . . ."  */
-
-
-    /* grid-template-columns: 13fr 7.8fr 47.33fr 24.33fr 5.16fr 2.5fr; */
-
-    
-    /* grid-template-columns: 0.78fr 0.47fr 2.84fr 1.42fr 0.31fr 0.15fr; */
-
-
-
-
     grid-template-columns: 8fr 2fr 3fr 7.8fr 39.2fr 8.13fr 24.33fr 5.16fr 2.5fr;
-    /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
     overflow-x: hidden;
     grid-template-rows: auto;
     grid-template-areas: 
@@ -138,90 +14,23 @@ a{
     ". dash wel wel wel . . . ."
     ". slog slog slog slog slog . . ."
     ". detai detai detai detai . . . .";
-
-
-
     width: 100%; 
-    /* Ensure full width to align areas */
-    /* background-color: brown; */
-    /* gap:0; */
-
-z-index: -2;
+    z-index: -2;
 }
 /* except language black bg for top header except lang */
 .bgTopHeader{
     grid-column: 5 /span 9;
     grid-row:1;
     background-color:black;
-    /* background-color:rgb(34, 33, 33); */
 
     z-index:0;
     transform: translateY(-15px);
     width:100.50%;
-    /* height:10px; */
-    /* z-index: 2; */
+
 }
-/* ================hero section=========== */
-/* .heroSec{
-    grid-area: heroS;
-     grid-template-columns: 8fr 2fr 50fr 40fr;
-     grid-template-rows: 10fr 40fr 30fr 20fr;
-     grid-template-areas: 
-     ". dash wel ."
-     ". slog slog ."
-     ". detai detai ." ;   
-    } */
 
-    .dash{
-        grid-area: dash;
-        color: rgb(255, 215, 0);
-        transform: translateY(-30px);
-        font-size: 50px;
-        /* font-weight: 1000; */
-    }
-    .welcom{
-    grid-area: wel;
-    font-family: 'normal_font', sans-serif;
-    color: rgb(255, 215, 0);
-    margin-left: 10px;
-    font-size: 30px;
-    z-index: 1;
-    }
-    @font-face {
-        font-family: 'sloganFont';
-        src: url('../en font/ZenDots-Regular.woff2') format('woff2'),
-             url('../en font/ZenDots-Regular.woff') format('woff'),
-             url('../en font/ZenDots-Regular.ttf') format('truetype');
-        font-weight: normal;
-        font-style: normal;
-    }
-    .slogan ,.sloganSpecial{
-        grid-area:slog;
-        font-family: 'sloganFont', sans-serif;
-        color: white;
-
-        font-size:80px;
-        z-index: 1;
-
-    }
-    .sloganSpecial{
-        grid-area: slog;
-        color: rgb(255, 215, 0);
-        z-index: 1;
-
-    }
-    .heroDetails{
-        grid-area:detai ;
-        font-family: 'normal_font3_200', sans-serif;
-        color:white;
-        margin-top: 7%;
-        font-size: 150%;
-        font-weight: -100px;
-        z-index: 1;
-
-    }
 /* ======================================= */
-
+/* ------social Media---------- */
 .socialMedia{
     position:relative;
 
@@ -260,16 +69,15 @@ z-index: -2;
 
         /* padding: 35% 0px 0px 88%; */
     }
+
+
+    /* ---- addresses phone , email address---- */
     .addresses {
         grid-area: adr;
-        /* background-color: black; */
-        /* background-size: 240%; */
-        /* background-position:0% 79px; */
         width: 100%;
         order: 1;
         z-index: 3;
         height: -20px;
-        /* color: white; */
     }
     
     .addresses ul {
@@ -307,17 +115,10 @@ z-index: -2;
         color: white;
     }
     
-    @font-face {
-        font-family: 'AddressFont';
-        src: url('../en font/FugazOne-Regular.woff2') format('woff2'),
-             url('../en font/FugazOne-Regular.woff') format('woff'),
-             url('../en font/FugazOne-Regular.ttf') format('truetype');
-        font-weight: normal;
-        font-style: normal;
-    }
-    
-/* language part */
-.dividerLang{
+
+    /* ------- language part -------- */
+
+    .dividerLang{
     grid-column: 9;
     grid-row: 1;
     font-family:normal_font2_100 ;
@@ -345,17 +146,6 @@ z-index: -2;
 
     }
 
-
-
-    @font-face {
-        font-family: 'normal_bold_font';
-        src: url('../en font/Kanit-SemiBold.woff2') format('woff2'), /* Modern browsers */
-                url('../en font/Kanit-SemiBold.woff') format('woff'),   /* Older browsers */
-                url('../en font/Kanit-SemiBold.ttf') format('truetype'); /* Fallback */
-        font-weight: normal;
-        font-style: normal;
-        }
-
     .lang li:nth-child(1){
         transform: translateX(-45%);
         font-family: 'normal_bold_font', sans-serif;
@@ -368,19 +158,17 @@ z-index: -2;
 
     .lang li:nth-child(2) {
         
-
         font-family: 'normal_font', sans-serif;
         color: white;
-        
         font-size: 12px;
         /* background-color: purple; */
     } 
 
 
 
-  /* =======Second Header========= */
+  /* =======Second line of Header========= */
 
-/* logo */
+/* ------- logo ------ */
 .logo{
     grid-area:logo;
     width:100%;
@@ -397,6 +185,7 @@ z-index: -2;
     /* flex:1,1,15%; */
 }
 
+/* ------- menu -------- */
 /* menu yellow bg as well */
 .menu{
     position:relative;
@@ -412,14 +201,7 @@ z-index: -2;
     z-index: 5;
 }
 
-@font-face {
-    font-family: 'menu_font';
-    src: url('../en font/BeauRivage-Regular.woff2') format('woff2'), /* Modern browsers */
-            url('../en font/BeauRivage-Regular.woff') format('woff'),   /* Older browsers */
-            url('../en font/BeauRivage-Regular.ttf') format('truetype'); /* Fallback */
-    font-weight: normal;
-    font-style: normal;
-    }
+
 /* gray menu bg */
 .menu ul {
 grid-column:4/span3;
@@ -463,33 +245,16 @@ z-index: 20;
 .learningsTxt, .resumeTxt{
     margin-left: -1%;
 }
-@font-face {
-    font-family: 'davudtech_font';
-    src: url('../en font/AntonSC-Regular.woff2') format('woff2'), /* Modern browsers */
-            url('../en font/AntonSC-Regular.woff') format('woff'),   /* Older browsers */
-            url('../en font/AntonSC-Regular.ttf') format('truetype'); /* Fallback */
-    font-weight: normal;
-    font-style: normal;
-    }
-    /* davudtech title */
+
+    /* ------ davudtech title ------- */
+
 .title{
     grid-area:titleDT;
-    /* flex:1,1,25%; */
     /* background-color: aqua; */
     font-family: 'davudtech_font', sans-serif; 
     color:black;
     align-items: center;
-    transform: translate(-51%,-14%);
-
+    transform: translate(-51%,-13%);
     font-size: 200%;
     z-index: 5;
-}
-.firstDivider{
-    position: relative;
-    background-position: 0% -100%;
-    background-image: url("../en pic/En_laptop first divider.svg");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    width: 100%;
-    height:33vh;
 }

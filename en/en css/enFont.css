@@ -1,0 +1,76 @@
+
+
+
+
+@font-face {
+    font-family: 'normal_font_bold';
+    src: url('../en font/Kanit-Regular.woff2') format('woff2'), /* Modern browsers */
+            url('../en font/Kanit-Regular.woff') format('woff'),   /* Older browsers */
+            url('../en font/Kanit-Regular.ttf') format('truetype'); /* Fallback */
+    font-weight: normal;
+    font-style: normal;
+    }
+
+@font-face {
+    font-family: 'normal_font2_100';
+    src: url('../en font/Kanit-100.woff2') format('woff2'), /* Modern browsers */
+            url('../en font/Kanit-100.woff') format('woff'),   /* Older browsers */
+            url('../en font/Kanit-100.ttf') format('truetype'); /* Fallback */
+    font-weight: normal;
+    font-style: normal;
+    }
+
+@font-face {
+    font-family: 'normal_font';
+    src: url('../en font/Kanit-200.woff2') format('woff2'), /* Modern browsers */
+            url('../en font/Kanit-200.woff') format('woff'),   /* Older browsers */
+            url('../en font/Kanit-200.ttf') format('truetype'); /* Fallback */
+    font-weight: normal;
+    font-style: normal;
+    }
+
+
+@font-face {
+    font-family: 'normal_bold_font';
+    src: url('../en font/Kanit-SemiBold.woff2') format('woff2'), /* Modern browsers */
+            url('../en font/Kanit-SemiBold.woff') format('woff'),   /* Older browsers */
+            url('../en font/Kanit-SemiBold.ttf') format('truetype'); /* Fallback */
+    font-weight: normal;
+    font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'AddressFont';
+        src: url('../en font/FugazOne-Regular.woff2') format('woff2'),
+             url('../en font/FugazOne-Regular.woff') format('woff'),
+             url('../en font/FugazOne-Regular.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+@font-face {
+    font-family: 'menu_font';
+    src: url('../en font/BeauRivage-Regular.woff2') format('woff2'), /* Modern browsers */
+            url('../en font/BeauRivage-Regular.woff') format('woff'),   /* Older browsers */
+            url('../en font/BeauRivage-Regular.ttf') format('truetype'); /* Fallback */
+    font-weight: normal;
+    font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'davudtech_font';
+        src: url('../en font/AntonSC-Regular.woff2') format('woff2'), /* Modern browsers */
+                url('../en font/AntonSC-Regular.woff') format('woff'),   /* Older browsers */
+                url('../en font/AntonSC-Regular.ttf') format('truetype'); /* Fallback */
+        font-weight: normal;
+        font-style: normal;
+        }
+
+@font-face {
+    font-family: 'sloganFont';
+    src: url('../en font/ZenDots-Regular.woff2') format('woff2'),
+         url('../en font/ZenDots-Regular.woff') format('woff'),
+         url('../en font/ZenDots-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
