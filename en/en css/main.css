@@ -38,7 +38,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    z-index: -1;
+    z-index: -10;
 }
 
 
@@ -188,7 +188,7 @@
     width: 3%;
 }
 .aboutExperties{
-    display: flex;
+
     align-items: center;
     gap:5px;
 
@@ -210,6 +210,22 @@
 
 
 .aboutEmergency{
-    grid-column:10;
-    grid-row: 5;
+    grid-column: 16/span 6;
+    grid-row: 6 ;
+    display: flex;
+    flex-direction: column;
+    color:white;
+    font-family: 'normal_font', sans-serif;
+    gap:9%;
+}
+
+
+.aboutEmergency span:nth-child(2){
+    font-family: AddressFont;
+    font-size: 170%;
+
+}
+.aboutIcon2ndCol{
+    width: 3%;
+
 }
