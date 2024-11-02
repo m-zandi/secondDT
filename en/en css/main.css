@@ -1,59 +1,72 @@
 
 
-.bgImageToAllHero {
-    /* grid-column: 1/span8;  */
-    position: relative;
-
-    top: 0%;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-image: url('../../image/hero.png');
-    background-size: cover;
-    background-position: 0% 45.5%;
-    background-repeat: no-repeat;
-    /* background-color: rgb(222, 25, 25); */
-    z-index: -1;
-}
-
-
-.fullScreenTransparent {
-    position:absolute;
-    /* grid-column: 1/span9; */
-    /* grid-row: auto; */
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: black;
-    opacity: 0.7;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    z-index: -1;
-}
 
 
 /* ================hero section=========== */
     .hero{
-        margin-top: 1%;
+        margin-top: 6%;
         position: relative;
         display: grid;
         grid-template-columns: repeat(40,1fr);
         grid-template-rows: auto;
         width:100%;
-        z-index: 10;
+        /* z-index: -11; */
+        /* background-position: 200% 600%;
+        background-image: url('../../image/hero.png');
+        background-size: cover; */
+        background-repeat: no-repeat;
+        /* overflow: hidden */
+
+
         
+ /* -- bg herosection -- */
+        .bgImageToAllHero {
+            /* position: absolute; */
+            /* display: flex; */
+             grid-column: 1/ span 40;
+            grid-row: 1/ span 10;
+            margin-top: -2%;
+            top: 0%;
+            right: 0;
+            bottom: 0;
+            left: 0;
+      background-color: brown;
+            width: 100%;
+            height: 100vh;
+            background-image: url('../../image/hero.png'); 
+            background-size: cover;
+            background-position: 0% 55.5%;
+            background-repeat: no-repeat;
+            z-index: -2;
+        }
+        
+        
+        .fullScreenTransparent {
+            position:absolute;
+            /* grid-column: 1/span9; */
+            /* grid-row: auto; */
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            width: 100vw;
+            height: 100%;
+            background-color: black;
+            opacity: 0.7;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            z-index: 1;
+        }
+        
+
+
 
     }
 
     .welcome{
         grid-column: 4/span 15 ;
-        grid-row:1;
+        grid-row:3;
         display: flex;
         flex-direction: row;
         text-shadow: 
@@ -68,7 +81,7 @@
 
         color: rgb(255, 215, 0);
         transform: translateY(-30px);
-        font-size: 50px;
+        font-size: 2.5vw;
         /* background-color: aqua; */
         z-index: 2;
  
@@ -78,7 +91,7 @@
     font-family: 'normal_font_bold', sans-serif;
     color: rgb(255, 215, 0);
     margin-left: 10px;
-    font-size: 200%;
+    font-size: 1.7vw;
     z-index: 2;
     }
 
@@ -86,12 +99,12 @@
         position: relative;
         margin-top: 3.5%;
         grid-column: 4/span 20 ;
-        grid-row:5;
+        grid-row:4/span 10;
 
         font-family: 'sloganFont', sans-serif;
         color: white;
 
-        font-size:450%;
+        font-size:3.4vw;
         z-index: 2;
         text-shadow: 
         0px 0px 15px black, /* Top-left outline */
@@ -109,12 +122,12 @@
     .heroDetails{
         margin-top: 3.5%;
         grid-column: 4/span 20 ;
-        grid-row:6;
+        grid-row:7/ span 3;
         font-family: 'normal_font', sans-serif;
         color:white;
         margin-top: 7%;
         margin-bottom: 5%;
-        font-size: 150%;
+        font-size: 1.2vw;
         text-align: justify;            
         z-index: 1;
         text-shadow: 
@@ -126,32 +139,41 @@
     }
     /* ---------- first divider ------ */
 .firstDivider{
+    grid-column: 1/span 40;
+    grid-row: 14;
+    /* margin-top: 10%; */
     position: relative;
     background-image: url("../en pic/En_laptop first divider.svg");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: contain;
+    background-clip: content-box;
     width: 100%;
-    height:47.4%;
-    z-index: -2;
+    height:100vhx;
+    z-index:4;
+    background-color: black;
+    object-fit: contain;
+    min-height: 15.2vw; 
+    
+    min-width: 100px; /* Set a minimum width so it’s visible */
 }
 
 /* --------- about ---------- */
 .about{
-    /* position: relative; */
+    /* position: initial; */
 
-
+    /* margin-top: -10%; */
     display: grid;
-    grid-template-columns: repeat(20,1fr);
+    grid-template-columns: repeat(40,1fr);
     overflow-x: hidden;
-    grid-template-rows: 10;
+    grid-template-rows: auto;
     width: 100%; 
     z-index: 10; 
 }
  .aboutImage{
-    grid-column: 3/span 7;
-    grid-row: 1/span 10;
-    width: 120%;
-    height: 100vh;
+    grid-column: 9/span 15;
+    grid-row: 1/span 75;
+    width: 30vw;
+    height: 30vw;
     background-image: url('../../image/about.png');
     background-size: 100%;
     background-repeat: no-repeat;
@@ -160,7 +182,7 @@
 .aboutCompany{
     color: white;
     display:flex;
-    grid-column: 13/span 4;
+    grid-column: 22/span 15;
     grid-row: 2;
     text-shadow: 
     0px 0px 15px black, /* Top-left outline */
@@ -189,7 +211,7 @@
 
 .aboutSlogan{
     display:flex;
-    grid-column: 13/span 7 ;
+    grid-column: 22/span 15; ;
     grid-row: 3;
     color: white;
     font-family:sloganFont ;
@@ -215,9 +237,9 @@
 
 
 .aboutDetails{
-    grid-column: 13/span 6;
+    grid-column: 22/span 15;;
     grid-row: 4;
-    margin-top: 7%;
+    margin-top: 0%;
     font-family: 'normal_font', sans-serif;
     color:white;
     display: flex;
@@ -236,8 +258,8 @@
 }
 
 .aboutPros{
-    grid-column: 13/span 6;
-    grid-row: 6; 
+    grid-column: 22/span 15;;
+    grid-row: 5; 
     display:flex;
     flex-direction: column;
     gap:9%;
@@ -276,8 +298,8 @@
 
 
 .aboutEmergency{
-    grid-column: 16/span 6;
-    grid-row: 6 ;
+    grid-column: 28/span 12;;
+    grid-row: 5 ;
     display: flex;
     flex-direction: column;
     color:white;
@@ -315,7 +337,8 @@
 
 .secondDivider{
     grid-column: 1/span 40;
-    grid-row: 1;
+    grid-row: 1/span 10;
+    margin-top: 1%;
     /* display: flex; */
     /* background-position: 0% 0%; */
     background-image: url("../en pic/En laptop second divider.svg");
@@ -328,7 +351,7 @@
  .portfolioAllIntro{
     margin-top: 4%;
     grid-column: 13/span 16;
-    grid-row:1;    
+    grid-row:2;    
     flex-direction: column;
     display: flex;
     color:black;

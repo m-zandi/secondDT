@@ -4,6 +4,7 @@
 
 /* ===============topHeader============== */
 .header {
+    position: absolute;
     display: grid;
     grid-template-columns: 8fr 2fr 3fr 7.8fr 39.2fr 8.13fr 24.33fr 5.16fr 2.5fr;
     overflow-x: hidden;
@@ -15,7 +16,8 @@
     ". slog slog slog slog slog . . ."
     ". detai detai detai detai . . . .";
     width: 100%; 
-    z-index: -2;
+    z-index: 5;
+    overflow: hidden
 }
 /* except language black bg for top header except lang */
 .bgTopHeader{
