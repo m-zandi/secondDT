@@ -31,7 +31,7 @@
 
 
 @font-face {
-    font-family: 'normal_bold_font';
+    font-family: 'normal_font_bold_2';
     src: url('../en font/Kanit-SemiBold.woff2') format('woff2'), /* Modern browsers */
             url('../en font/Kanit-SemiBold.woff') format('woff'),   /* Older browsers */
             url('../en font/Kanit-SemiBold.ttf') format('truetype'); /* Fallback */
@@ -71,6 +71,14 @@
     src: url('../en font/ZenDots-Regular.woff2') format('woff2'),
          url('../en font/ZenDots-Regular.woff') format('woff'),
          url('../en font/ZenDots-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'dashFont';
+    src: url('../en font/OpenSans-Light.woff2') format('woff2'),
+         url('../en font/OpenSans-Light.woff') format('woff'),
+         url('../en font/OpenSans-Light.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }

@@ -174,6 +174,8 @@
     color: rgb(255, 215, 0);
     transform: translateY(-30px);
     font-size: 50px;
+    font-family: dashFont;
+
 
 }
 .aboutCompany span:nth-child(2){
@@ -299,15 +301,91 @@
 
 }
 
+
+
+ /* ------ portfolio ------ */
+ .portfolio{
+    display: grid;
+    grid-template-columns: repeat(40,1fr);
+    width:100%;
+    z-index: 5;
+ }
+
+ /* -- second divider -- */
+
 .secondDivider{
-    position: relative;
-    background-position: 0% 0%;
+    grid-column: 1/span 40;
+    grid-row: 1;
+    /* display: flex; */
+    /* background-position: 0% 0%; */
     background-image: url("../en pic/En laptop second divider.svg");
     background-repeat: no-repeat;
     background-size: 100%;
     width: 100%;
-    height:47.4%;
+    height:100vh ;
     z-index: -2;
 }
+ .portfolioAllIntro{
+    margin-top: 4%;
+    grid-column: 13/span 16;
+    grid-row:1;    
+    flex-direction: column;
+    display: flex;
+    color:black;
+    text-shadow: 
+    0px 0px 2px rgb(255, 215, 0), /* Top-left outline */
+    0px 0px 2px rgb(255, 215, 0),  /* Top-right outline */
+    0px 0px 0px rgb(255, 215, 0),  /* Bottom-left outline */
+    0px 0px 0px rgb(255, 215, 0);   /* Bottom-right outline */ 
+ }
 
- /* ------/ portfolio ------ */
+ .portfolioIntro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color:black;
+    text-shadow: 
+    0px 0px 2px rgb(255, 215, 0), /* Top-left outline */
+    0px 0px 2px rgb(255, 215, 0),  /* Top-right outline */
+    0px 0px 0px rgb(255, 215, 0),  /* Bottom-left outline */
+    0px 0px 0px rgb(255, 215, 0);   /* Bottom-right outline */
+    /* gap:2px; */
+    gap:10px;
+
+ }
+ .portfolioIntro span:nth-child(1){
+    transform: translateY(-10px);
+
+    /* margin-top: -14px; */
+    font-family: dashFont;
+    color:black;
+    font-size: 30px;
+    /* gap:2px; */
+
+
+ }
+ .portfolioIntro span:nth-child(2){
+    font-family: 'normal_font_bold',sans-serif;
+    /* margin-left:2%; */
+    font-size: 150%;
+    z-index: 1;
+
+
+ }
+ .portfolioSlogan{
+    /* margin-top: -100%; */
+
+    text-align: center;
+    /* grid-column: 15 /span 10; */
+    /* grid-row:2; */
+    font-family:sloganFont ;
+    color:black;
+    font-size: 250%;
+    text-shadow: 
+    0px 0px 10px rgb(255, 215, 0), /* Top-left outline */
+    0px 0px 10px rgb(255, 215, 0),  /* Top-right outline */
+    0px 0px 10px rgb(255, 215, 0),  /* Bottom-left outline*/
+    0px 0px 10px rgb(255, 215, 0);   /* Bottom-right */
+
+ }
