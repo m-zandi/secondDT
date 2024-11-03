@@ -150,7 +150,7 @@
 
     .lang li:nth-child(1){
         transform: translateX(-45%);
-        font-family: 'normal_bold_font', sans-serif;
+        font-family: 'normal_font_bold', sans-serif;
         color: white;
         font-size: 15px;  
         /* background-color: brown; */
