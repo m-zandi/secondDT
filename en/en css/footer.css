@@ -1,0 +1,122 @@
+/* ------ footer ------ */
+.footer{
+    display: grid;
+    grid-template-columns: repeat(40,1fr);
+    grid-template-rows: auto;
+    width:100%;
+}
+
+.contactText{
+    display:grid;
+    grid-column: 4/span7;
+    grid-row:1;
+    color:rgb(255, 215, 0);
+    font-family: normal_font_bold;
+    font-size:1.7vw;
+}
+
+.footerAddresses{
+    display: flex; 
+    flex-direction: column;
+    
+    grid-column: 4/ span 18;
+    margin-top: 30px; 
+    
+
+}
+.footerAddresses a{
+    margin-top: 10px;
+}
+
+/* - location part -  */
+.footerIconText a{
+    display: flex;
+    flex-direction: row;
+}
+
+.locationIconText:nth-child(1){
+    display: flex;
+    grid-row:4;
+
+    
+}
+.locationIconText:nth-child(2){
+    display: flex;
+    grid-row:4;
+
+}
+.locationIcon{
+    width: 20px;
+}
+.locationText{
+    font-family:AddressFont ;  
+    font-size: 20px; 
+    margin-left: 15px; 
+}
+
+/* - phone part -  */
+
+.phoneNumIconText{
+    display: flex;
+    flex-direction: row;
+}
+.phoneNumIconText:nth-child(1){
+    display: flex;
+    width: 15px;
+    grid-row:5;
+
+}
+.phoneNumIconText:nth-child(2){
+    display: flex;
+    grid-row:5;
+
+}
+.phoneNumIcon{
+    display: flex;
+    width: 20px;
+    grid-row:4;
+}
+.phoneNumText{
+    font-family:AddressFont ;  
+    font-size: 20px; 
+    margin-left: 15px;
+}
+
+
+
+
+
+
+/* - email part -  */
+.emailIconText{
+    display: flex;
+    flex-direction: row;
+}
+
+.emailIconText:nth-child(1){
+    display: flex;
+
+    grid-row:5;
+}
+.emailIconText:nth-child(2){
+    display: flex;
+    grid-row:5;
+}
+.emailIcon{
+    width: 25px;
+}
+.emailText{
+    font-family:AddressFont ;  
+    font-size: 20px; 
+    margin-left: 15px;
+}
+
+/* ----social network---- */
+.footerSocial{
+    display:flex;
+    grid-column: 7/span 8;
+    grid-row: 6;
+}
+.footerSocial img{
+    width:1.2vw;
+}
