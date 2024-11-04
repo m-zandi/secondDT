@@ -122,7 +122,7 @@
     grid-column: 7/span 4;
     grid-row: 7;
     flex-direction: row;
-    gap:10px;
+    gap:20px;
     align-items: center;
 }
 .footerSocial img{
@@ -145,6 +145,14 @@
     text-decoration: underline;
     font-family:normal_font_bold_2 ;
     font-size: 25px;
-
-
+}
+.myAddress{
+    display: flex;
+    grid-column: 32/span 8;
+    grid-row: 7;
+    flex-direction: row;
+    color:white;
+    font-family:normal_font ;
+    font-size: 15px;
+    gap:4px;
 }
