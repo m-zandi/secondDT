@@ -7,8 +7,8 @@
 }
 
 .contactText{
-    display:grid;
-    grid-column: 4/span7;
+    /* display:flex; */
+    grid-column: 4/span2;
     grid-row:1;
     color:rgb(255, 215, 0);
     font-family: normal_font_bold;
@@ -19,7 +19,7 @@
     display: flex; 
     flex-direction: column;
     
-    grid-column: 4/ span 18;
+    grid-column: 4/ span 10;
     margin-top: 30px; 
     
 
@@ -35,13 +35,11 @@
 }
 
 .locationIconText:nth-child(1){
-    display: flex;
     grid-row:4;
 
     
 }
 .locationIconText:nth-child(2){
-    display: flex;
     grid-row:4;
 
 }
@@ -59,22 +57,20 @@
 .phoneNumIconText{
     display: flex;
     flex-direction: row;
+    /* grid-row:5; */
+
 }
 .phoneNumIconText:nth-child(1){
-    display: flex;
-    width: 15px;
     grid-row:5;
 
 }
 .phoneNumIconText:nth-child(2){
-    display: flex;
     grid-row:5;
 
 }
 .phoneNumIcon{
-    display: flex;
+    /* display: flex; */
     width: 20px;
-    grid-row:4;
 }
 .phoneNumText{
     font-family:AddressFont ;  
@@ -110,13 +106,45 @@
     font-size: 20px; 
     margin-left: 15px;
 }
-
+/* - divider in middle of footer for space -  */
+.dividerFooterBetween{
+    display:flex;
+    grid-column: 7/span 2;
+    grid-row: 6;
+    flex-direction: row;
+    margin-left:10px ;
+    margin-top: 11.7vh;
+    margin-bottom: 2vh;
+}
 /* ----social network---- */
 .footerSocial{
     display:flex;
-    grid-column: 7/span 8;
-    grid-row: 6;
+    grid-column: 7/span 4;
+    grid-row: 7;
+    flex-direction: row;
+    gap:10px;
+    align-items: center;
 }
 .footerSocial img{
     width:1.2vw;
+    
+}
+.footerLang{
+    display: flex;
+    grid-column: 20/span 4;
+    grid-row: 7;
+    flex-direction: row;
+    color:white;
+    font-family:normal_font_bold ;
+    font-size: 20px;
+    gap:8px;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.footerLang span:nth-child(1){
+    text-decoration: underline;
+    font-family:normal_font_bold_2 ;
+    font-size: 25px;
+
+
 }
