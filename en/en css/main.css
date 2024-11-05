@@ -541,3 +541,19 @@
     font-size:20px;
 }
 
+.moveUpper{
+
+    position: fixed;
+    right:-10.9%;
+    bottom: 10.7%;
+    z-index: 5;
+    opacity: 0;
+    transition: opacity 2s ease;
+
+}
+.moveUpper img{
+    width: 18%;
+    
+}
+
+
