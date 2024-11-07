@@ -1,6 +1,7 @@
 let currentIndex = 0;
 const slides = document.querySelectorAll('.slide');
 const bulletContainer = document.querySelector('.bullet-container');
+let autoSlideInterval; // Holds the auto-slide interval ID
 
 function updateSlides() {
     slides.forEach((slide, index) => {
@@ -17,12 +18,10 @@ function updateSlides() {
         }
     });
 
-    // Center the active slide
     const slideWidth = slides[0].offsetWidth;
     const containerWidth = document.querySelector('.slideshow-container').offsetWidth;
     const centerOffset = (containerWidth / 2) - (slideWidth / 2);
-    
-    // Calculate the new transform to center the active slide
+
     const translateX = -currentIndex * (slideWidth + 20) + centerOffset;
     document.querySelector('.slides').style.transform = `translateX(${translateX}px)`;
 }
@@ -34,6 +33,7 @@ function createBullets() {
         bullet.addEventListener('click', () => {
             currentIndex = index;
             updateSlides();
+            resetAutoSlide(); // Reset auto-slide on bullet click
         });
         bulletContainer.appendChild(bullet);
     });
@@ -44,17 +44,28 @@ function addImageClickEvents() {
         slide.addEventListener('click', () => {
             currentIndex = index;
             updateSlides();
+            resetAutoSlide(); // Reset auto-slide on image click
         });
     });
 }
 
-createBullets();
-addImageClickEvents(); // Add click events to images
-updateSlides();
+// Function to reset the auto-slide interval
+function resetAutoSlide() {
+    clearInterval(autoSlideInterval); // Stop the auto-slide
+    setTimeout(() => {
+        autoSlideInterval = setInterval(() => {
+            currentIndex = (currentIndex + 1) % slides.length;
+            updateSlides();
+        }, 20000); // Restart after 2 minutes
+    }, 120000); // 2-minute pause
+}
 
-
-// Auto change image every 3 seconds
-setInterval(() => {
+// Start auto-slide initially
+autoSlideInterval = setInterval(() => {
     currentIndex = (currentIndex + 1) % slides.length;
     updateSlides();
 }, 20000);
+
+createBullets();
+addImageClickEvents();
+updateSlides();

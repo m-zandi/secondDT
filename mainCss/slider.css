@@ -27,7 +27,8 @@ body {
 .slide {
     width: 250%;
     margin: 0 10px;
-    transition: transform 0.5s ease;
+    transition: transform 3s ease;
+    cursor:pointer;
 }
 
 .slide.active {
@@ -47,6 +48,7 @@ body {
     background-color: #ccc;
     margin: 0 5px;
     transition: border 0.3s ease;
+    cursor: pointer;
 }
 
 .bullet.active {
