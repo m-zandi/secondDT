@@ -33,7 +33,13 @@ body {
 
 .slide.active {
     transform: scale(2);
+    filter: drop-shadow(30px 0px 10px rgba(14, 0, 0, 14))
+    drop-shadow(-30px 0px 10px rgba(14, 0, 0, 14));
+
+
 }
+
+
 
 .bullet-container {
     text-align: center;
