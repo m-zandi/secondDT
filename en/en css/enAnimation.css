@@ -1,0 +1,110 @@
+@keyframes yearsWorkExAnim{
+    0% {
+        width: 20%;
+    }
+
+    100% {
+        width: 70%;
+
+    }
+}
+@keyframes numYearsWorkAnim{
+    0% {
+        transform: translateX(0px);
+        visibility: hidden;
+    }
+    50%{
+        transform: translateX(0px);
+        visibility: hidden;
+
+    }
+    70%{
+        transform: translateX(0px) scale(1.5);
+        visibility: show;
+    }
+
+    100% {
+        transform: translateX(5vw)scale(1.2);
+
+    }
+}
+
+@keyframes txTAnim{
+    0% {
+        visibility: hidden;
+    }
+    20%{
+        visibility: hidden;
+
+    }
+
+    50%{
+        visibility: show;
+
+    }
+}
+
+@keyframes successRateAnim{
+    0% {
+        width: 20%;
+    }
+
+    100% {
+        width: 65%;
+
+    }
+}
+
+@keyframes numSuccessRateAnim{
+    0% {
+        transform: translateX(0px);
+        visibility: hidden;
+    }
+    50%{
+        transform: translateX(0px);
+        visibility: hidden;
+
+    }
+    70%{
+        transform: translateX(0px) scale(1.5);
+        visibility: show;
+    }
+
+    100% {
+        transform: translateX(260%)scale(1.2);
+
+    }
+}
+
+
+
+@keyframes satisfiedClientsAnim{
+    0% {
+        width: 20%;
+    }
+
+    100% {
+        width: 60%;
+
+    }
+}
+@keyframes numSatisfiedClientsAnim{
+    0% {
+        transform: translateX(0px);
+        visibility: hidden;
+    }
+    50%{
+        transform: translateX(0px);
+        visibility: hidden;
+
+    }
+    70%{
+        transform: translateX(0px) scale(1.5);
+        visibility: show;
+    }
+
+    100% {
+        transform: translateX(190%)scale(1.2);
+
+    }
+}

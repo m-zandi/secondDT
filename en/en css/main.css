@@ -179,6 +179,125 @@
     background-repeat: no-repeat;
  }
 
+ .yearsWork,.successRate,.satisfiedClients{
+    margin: 4px;
+    display: flex;
+    font-family: statisticFont;
+    font-size:18px;
+    width:20%;
+    height:50px;
+    gap:4px;
+    align-items: center;
+    border-radius: 0px 30px 30px 0px;
+    box-shadow: 
+    0px 0px 6px black, /* Top-left outline */
+    0px 0px 6px black,  /* Top-right outline */
+    0px 0px 0px black,  /* Bottom-left outline */
+    0px 0px 0px black;   /* Bottom-right outline */
+ }
+
+ .yearsWork{
+    background-color: rgb(97, 97, 97);
+ }
+.yearsWork.visible{
+    animation: yearsWorkExAnim 4s forwards ease-in-out;
+    animation-iteration-count: 1; /* Play only once */
+}
+
+ 
+ .yearsWork span:nth-child(1){
+
+    margin-left: 2px;
+    font-weight: bold;
+
+    color:white;
+    animation: txTAnim 4s forwards ease-in-out;
+
+
+ }
+ .yearsWork span:nth-child(2).visible{
+    animation: numYearsWorkAnim 4s forwards ease-in-out;
+ }
+
+ .successRate{
+
+    background-color: rgb(189, 189, 189);
+ }
+.successRate.visible{
+    animation: successRateAnim 4s forwards ease-in-out;
+    animation-iteration-count: 1; /* Play only once */
+}
+
+
+ .successRate span:nth-child(1){
+    margin-left: 2px;;
+    font-weight: bold;
+    animation: txTAnim 4s forwards ease-in-out;
+
+ }
+ .successRate span:nth-child(2).visible{
+    animation: numSuccessRateAnim 4s forwards ease-in-out;
+
+ }
+
+
+.satisfiedClients{
+
+    background-color: rgb(255, 215, 0);
+
+ }
+.satisfiedClients.visible{
+    animation: satisfiedClientsAnim 4s forwards ease-in-out;
+
+}
+
+
+
+ .satisfiedClients span:nth-child(1){
+    margin-left: 2px;;
+    font-weight: bold;
+    animation: txTAnim 4s forwards ease-in-out;
+
+ }
+ .satisfiedClients span:nth-child(2).visible{
+    animation: numSatisfiedClientsAnim 4s forwards ease-in-out;
+
+ }
+
+
+ .yearsWork span,.successRate  span,.satisfiedClients  span{
+    /* gap:4px; */
+    color:black;
+
+
+
+
+ }
+
+ .yearsWork span:nth-child(2),.successRate  span:nth-child(2),.satisfiedClients  span:nth-child(2){
+    margin-left: 3%;
+    font-family: AddressFont;
+    font-size: 20px;
+    color:white;
+    /* -- text-shadow: offset-x offset-y blur-radius color; -- */
+    text-shadow: 
+
+        /* Inner glow outline */
+        0px 0px 3px black,
+        0px 0px 6px black,
+        
+        /* Middle glow outline */
+        0px 0px 9px black,
+        0px 0px 12px black,
+        
+        /* Outer glow outline */
+        0px 0px 15px black,
+        0px 0px 18px black;
+
+ }
+
+
+
 .aboutCompany{
     color: white;
     display:flex;
