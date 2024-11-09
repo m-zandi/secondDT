@@ -74,7 +74,7 @@
         0px 0px 2px black,  /* Top-right outline */
         0px 0px 0px black,  /* Bottom-left outline */
         0px 0px 0px black;   /* Bottom-right outline */
-        animation: visabilityAnimation 5s forwards  ease-in-out;
+        animation: visabilityAnimation 11s forwards  ease-in-out;
         animation-iteration-count: 1; /* Play only once */
 
         }
@@ -113,7 +113,7 @@
         0px 0px 15px black,  /* Top-right outline */
         0px 0px 0px black,  /* Bottom-left outline */
         0px 0px 0px black;   /* Bottom-right outline */
-        animation: visabilityAnimation 10s forwards  ease-in-out;
+        animation: sloganAnimation 16s forwards  ease-in-out;
         animation-iteration-count: 1; /* Play only once */
 
     }
@@ -139,7 +139,7 @@
         0px 0px 2px black,  /* Top-right outline */
         0px 0px 0px black,  /* Bottom-left outline */
         0px 0px 0px black;   /* Bottom-right outline */
-        animation: visabilityAnimation 15s forwards  ease-in-out;
+        animation: visabilityAnimation 21s forwards  ease-in-out;
         animation-iteration-count: 1; /* Play only once */
     }
 
@@ -581,7 +581,7 @@
 
  }
  .portfolioSlogan.visible{
-    animation: visabilityAnimation 5s forwards  ease-in-out;
+    animation: visabilityAnimation 3s forwards  ease-in-out;
     animation-iteration-count: 1; /* Play only once */
  }
 

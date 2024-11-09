@@ -133,10 +133,55 @@
     }
     70%{
         opacity: 1;
+        text-shadow: 
+        0px 0px 3px white, /* Top-left outline */
+        0px 0px 3px white,  /* Top-right outline */
+        0px 0px 0px black,  /* Bottom-left outline */
+        0px 0px 0px black;   /* Bottom-right outline */
+    }
+   
+    100%{
+        opacity: 1;
+        /* text-shadow:none; */
+
+    }
+    
+ }
+
+
+ @keyframes sloganAnimation {
+    0%{
+        opacity: 0;
+        
+    }
+    70%{
+        opacity: 1;
+
+    }
+
+
+
+    100%{
+        opacity: 1;
+        /* text-shadow:none; */
+
+    }
+    
+ }
+
+
+
+ @keyframes titleAnimation {
+    0%{
+        opacity: 0;
+        
+    }
+    70%{
+        opacity: 1;
 
         text-shadow: 
-        0px 0px 1px white, /* Top-left outline */
-        0px 0px 1px white,  /* Top-right outline */
+        0px 0px 1px black, /* Top-left outline */
+        0px 0px 1px black,  /* Top-right outline */
         0px 0px 0px black,  /* Bottom-left outline */
         0px 0px 0px black;   /* Bottom-right outline */
     }
@@ -147,24 +192,20 @@
     }
     
  }
- @keyframes titleAnimation {
+ @keyframes logoAnimation {
     0%{
         opacity: 0;
         
     }
+
     70%{
         opacity: 1;
 
-        text-shadow: 
-        0px 0px 1px white, /* Top-left outline */
-        0px 0px 1px white,  /* Top-right outline */
-        0px 0px 0px black,  /* Bottom-left outline */
-        0px 0px 0px black;   /* Bottom-right outline */
+
     }
 
     100%{
         opacity: 1;
-        /* text-shadow:none; */
     }
     
  }
