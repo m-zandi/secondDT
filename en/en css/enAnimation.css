@@ -11,46 +11,55 @@
 @keyframes numYearsWorkAnim{
     0% {
         transform: translateX(0px);
-        visibility: hidden;
+        opacity: 0;
     }
     50%{
         transform: translateX(0px);
-        visibility: hidden;
+        opacity: 0;
 
     }
     70%{
         transform: translateX(0px) scale(1.5);
-        visibility: show;
+        opacity: 1;
     }
 
     100% {
         transform: translateX(5vw)scale(1.2);
+        opacity: 1;
+
 
     }
 }
 
 @keyframes txTAnim{
     0% {
-        visibility: hidden;
+        opacity: 0;
     }
-    20%{
-        visibility: hidden;
 
-    }
 
     50%{
-        visibility: show;
+        opacity: 1;
+
 
     }
+    100%{
+        opacity: 1;
+
+
+    }
+
 }
 
 @keyframes successRateAnim{
+
     0% {
         width: 20%;
     }
 
+
     100% {
         width: 65%;
+
 
     }
 }
@@ -58,20 +67,22 @@
 @keyframes numSuccessRateAnim{
     0% {
         transform: translateX(0px);
-        visibility: hidden;
+        opacity: 0;
     }
     50%{
         transform: translateX(0px);
-        visibility: hidden;
+        opacity: 0;
 
     }
     70%{
         transform: translateX(0px) scale(1.5);
-        visibility: show;
+        opacity: 1;
     }
 
     100% {
         transform: translateX(260%)scale(1.2);
+        opacity: 1;
+
 
     }
 }
@@ -81,7 +92,10 @@
 @keyframes satisfiedClientsAnim{
     0% {
         width: 20%;
-    }
+        /* opacity: 0; */
+
+    }    
+
 
     100% {
         width: 60%;
@@ -91,20 +105,22 @@
 @keyframes numSatisfiedClientsAnim{
     0% {
         transform: translateX(0px);
-        visibility: hidden;
+        opacity: 0;
     }
     50%{
         transform: translateX(0px);
-        visibility: hidden;
+        opacity: 0;
 
     }
     70%{
         transform: translateX(0px) scale(1.5);
-        visibility: show;
+        opacity: 1;
     }
 
     100% {
         transform: translateX(190%)scale(1.2);
+        opacity: 1;
+
 
     }
 }
@@ -113,11 +129,42 @@
  @keyframes visabilityAnimation {
     0%{
         opacity: 0;
+        
+    }
+    70%{
+        opacity: 1;
+
+        text-shadow: 
+        0px 0px 1px white, /* Top-left outline */
+        0px 0px 1px white,  /* Top-right outline */
+        0px 0px 0px black,  /* Bottom-left outline */
+        0px 0px 0px black;   /* Bottom-right outline */
     }
 
     100%{
         opacity: 1;
+        /* text-shadow:none; */
+    }
+    
+ }
+ @keyframes titleAnimation {
+    0%{
+        opacity: 0;
+        
+    }
+    70%{
+        opacity: 1;
 
+        text-shadow: 
+        0px 0px 1px white, /* Top-left outline */
+        0px 0px 1px white,  /* Top-right outline */
+        0px 0px 0px black,  /* Bottom-left outline */
+        0px 0px 0px black;   /* Bottom-right outline */
+    }
+
+    100%{
+        opacity: 1;
+        /* text-shadow:none; */
     }
     
  }

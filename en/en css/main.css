@@ -209,21 +209,36 @@
 .yearsWork.visible{
     animation: yearsWorkExAnim 4s forwards ease-in-out;
     animation-iteration-count: 1; /* Play only once */
+    animation-delay: 1s;
+
 }
 
  
  .yearsWork span:nth-child(1){
+    opacity: 0;
 
     margin-left: 2px;
     font-weight: bold;
 
     color:white;
+
     animation: txTAnim 4s forwards ease-in-out;
+    animation-delay: 2s;
+
 
 
  }
+
+ .yearsWork span:nth-child(2){
+    opacity: 0;
+
+ }
+
+
  .yearsWork span:nth-child(2).visible{
     animation: numYearsWorkAnim 4s forwards ease-in-out;
+    animation-delay: 2s;
+
  }
 
  .successRate{
@@ -233,17 +248,28 @@
 .successRate.visible{
     animation: successRateAnim 4s forwards ease-in-out;
     animation-iteration-count: 1; /* Play only once */
+    animation-delay: 2s;
+
 }
 
 
  .successRate span:nth-child(1){
+    opacity: 0;
+
     margin-left: 2px;;
     font-weight: bold;
     animation: txTAnim 4s forwards ease-in-out;
+    animation-delay: 2s;
+
+
+ }
+ .successRate span:nth-child(2){
+    opacity: 0;
 
  }
  .successRate span:nth-child(2).visible{
     animation: numSuccessRateAnim 4s forwards ease-in-out;
+    animation-delay: 2s;
 
  }
 
@@ -255,19 +281,33 @@
  }
 .satisfiedClients.visible{
     animation: satisfiedClientsAnim 4s forwards ease-in-out;
+    animation-delay: 2s;
+
 
 }
 
 
 
  .satisfiedClients span:nth-child(1){
+    opacity: 0;
+
     margin-left: 2px;;
     font-weight: bold;
     animation: txTAnim 4s forwards ease-in-out;
+    animation-delay: 2s;
+
 
  }
+ .satisfiedClients span:nth-child(2){
+    opacity: 0;
+
+ }
+
+
  .satisfiedClients span:nth-child(2).visible{
     animation: numSatisfiedClientsAnim 4s forwards ease-in-out;
+    animation-delay: 2s;
+
 
  }
 

@@ -182,6 +182,7 @@
 
 .logo img{
     /* background-color: tomato; */
+    opacity: 0;
     transform: translate(0%,-18%);
     width:160%;
     /* box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); */
@@ -189,6 +190,8 @@
 
     /* height: 230px; */
     /* flex:1,1,15%; */
+    animation: visabilityAnimation 4s forwards ease-in-out;
+    animation-iteration-count: 1; /* Play only once */
 }
 
 /* ------- menu -------- */
@@ -269,4 +272,10 @@ z-index: 20;
     0px 0px 15px rgb(255, 215, 0),  /* Top-right outline */
     0px 0px 0px rgb(255, 215, 0),  /* Bottom-left outline */
     0px 0px 0px rgb(255, 215, 0);   /* Bottom-right outline */
+    opacity: 0;
+
+    animation: visabilityAnimation 1s forwards ease-in-out;
+    animation-iteration-count: 1; /* Play only once */
+    /* animation-delay: 1s; */
+
 }
