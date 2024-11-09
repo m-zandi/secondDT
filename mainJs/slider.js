@@ -64,7 +64,7 @@ function resetAutoSlide() {
 autoSlideInterval = setInterval(() => {
     currentIndex = (currentIndex + 1) % slides.length;
     updateSlides();
-}, 10000);
+}, 7000);
 
 createBullets();
 addImageClickEvents();

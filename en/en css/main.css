@@ -74,6 +74,8 @@
         0px 0px 2px black,  /* Top-right outline */
         0px 0px 0px black,  /* Bottom-left outline */
         0px 0px 0px black;   /* Bottom-right outline */
+        animation: visabilityAnimation 5s forwards  ease-in-out;
+        animation-iteration-count: 1; /* Play only once */
 
         }
     
@@ -111,6 +113,8 @@
         0px 0px 15px black,  /* Top-right outline */
         0px 0px 0px black,  /* Bottom-left outline */
         0px 0px 0px black;   /* Bottom-right outline */
+        animation: visabilityAnimation 10s forwards  ease-in-out;
+        animation-iteration-count: 1; /* Play only once */
 
     }
     .sloganSpecial{
@@ -135,8 +139,11 @@
         0px 0px 2px black,  /* Top-right outline */
         0px 0px 0px black,  /* Bottom-left outline */
         0px 0px 0px black;   /* Bottom-right outline */
-
+        animation: visabilityAnimation 15s forwards  ease-in-out;
+        animation-iteration-count: 1; /* Play only once */
     }
+
+    
     /* ---------- first divider ------ */
 .firstDivider{
     grid-column: 1/span 40;
@@ -529,7 +536,13 @@
     0px 0px 10px rgb(255, 215, 0),  /* Top-right outline */
     0px 0px 10px rgb(255, 215, 0),  /* Bottom-left outline*/
     0px 0px 10px rgb(255, 215, 0);   /* Bottom-right */
+    opacity: 0;
 
+
+ }
+ .portfolioSlogan.visible{
+    animation: visabilityAnimation 5s forwards  ease-in-out;
+    animation-iteration-count: 1; /* Play only once */
  }
 
  /* -- 3rd third divider --  */
@@ -552,6 +565,18 @@
     width:100%;
     
  }
+
+
+ /* -- product animation part -- */
+ .productIntro, .productTitle, .productDetails{
+    opacity: 0;
+ }
+ .productIntro.visible, .productTitle.visible, .productDetails.visible{
+    animation: visabilityAnimation 7s forwards  ease-in-out;
+    animation-iteration-count: 1; /* Play only once */
+ }
+ /*  */
+
  .productIntro{
     grid-column: 4/ span 5;
     grid-row:1;
@@ -567,6 +592,7 @@
     0px 0px 2px black,  /* Top-right outline */
     0px 0px 0px black,  /* Bottom-left outline */
     0px 0px 0px black;   /* Bottom-right outline */
+
  }
 
 
@@ -591,6 +617,7 @@
     0px 0px 2px black,  /* Top-right outline */
     0px 0px 0px black,  /* Bottom-left outline */
     0px 0px 0px black;   /* Bottom-right outline */
+
 }
 .productTitle span:nth-child(2){
     color:rgb(255, 215, 0)
@@ -608,6 +635,7 @@
     0px 0px 2px black,  /* Top-right outline */
     0px 0px 0px black,  /* Bottom-left outline */
     0px 0px 0px black;   /* Bottom-right outline */
+
 }
 
 .productsPhotos{

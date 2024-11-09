@@ -10,6 +10,20 @@ function isElementInViewport(el) {
 }
 
 // Get the elements to animate
+// --product animation element--
+const productElement = document.querySelector('.product');
+
+const productIntroElement = document.querySelector('.productIntro');
+
+const productTitleElement = document.querySelector('.productTitle');
+
+const productDetailsElement = document.querySelector('.productDetails');
+// -portfolio animation elemets-
+
+const portfolioElement = document.querySelector('.portfolio');
+
+const portfolioSloganElement = document.querySelector('.portfolioSlogan');
+
 const mainElement = document.querySelector('.aboutImage');
 
 const animElement1 = document.querySelector('.yearsWork');
@@ -39,6 +53,26 @@ function checkVisibility() {
     if (isElementInViewport(mainElement)) {
         animElement6.classList.add('visible');
     }
+    if (isElementInViewport(portfolioElement)) {
+        portfolioSloganElement.classList.add('visible');
+    }
+
+    // product part
+    if (isElementInViewport(productIntroElement)) {
+        productIntroElement.classList.add('visible');
+    
+    }
+    if (isElementInViewport(productTitleElement)) {
+        productTitleElement.classList.add('visible');
+    
+    }
+    if (isElementInViewport(productDetailsElement)) {
+        productDetailsElement.classList.add('visible');
+    
+    }
+
+
+
 }
 
 // Listen for scroll events and check visibility
