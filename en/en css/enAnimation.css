@@ -133,11 +133,7 @@
     }
     70%{
         opacity: 1;
-        text-shadow: 
-        0px 0px 3px white, /* Top-left outline */
-        0px 0px 3px white,  /* Top-right outline */
-        0px 0px 0px black,  /* Bottom-left outline */
-        0px 0px 0px black;   /* Bottom-right outline */
+
     }
    
     100%{
