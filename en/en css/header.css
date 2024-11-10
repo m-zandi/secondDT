@@ -6,7 +6,7 @@
 .header {
     position: absolute;
     display: grid;
-    grid-template-columns: 8fr 2fr 3fr 7.8fr 39.2fr 8.13fr 24.33fr 5.16fr 2.5fr;
+    grid-template-columns:repeat(100,1fr);
     overflow-x: hidden;
     grid-template-rows: auto;
     grid-template-areas: 
@@ -21,13 +21,14 @@
 }
 /* except language black bg for top header except lang */
 .bgTopHeader{
-    grid-column: 5 /span 9;
+    grid-column: 1 /span 20;
     grid-row:1;
     background-color:black;
-
+    margin:0;
+    padding: 0;
     z-index:0;
-    transform: translateY(-15px);
-    width:100%;
+    /* transform: translateY(-15px); */
+    /* width:100%; */
 
 }
 
@@ -35,14 +36,17 @@
 /* ------social Media---------- */
 .socialMedia{
     position:relative;
-
-    grid-area:sM;
+    grid-column: 1/ span 25;
+    grid-row: 1;
+    /* grid-area:sM; */
     transform: translate(-1%,-4px);
     background-image: url("../en pic/En laptop social media bg - FFD700 laptop.svg");
     background-repeat: no-repeat;
     /* background-color: black; */
-    background-size: 100%; 
-    width: 118.5%;
+    background-size: contain;
+    /* background-position: center; */
+    /* background-size: 100%;  */
+    /* width: 118.5%; */
     /* height: 100px; */
     /* order:2; */
     z-index: 4;
@@ -73,11 +77,12 @@
 
     /* ---- addresses phone , email address---- */
     .addresses {
-        grid-area: adr;
+        grid-column: 20/ span 79;
+        grid-row: 1;
+        /* grid-area: adr; */
         width: 100%;
-        order: 1;
         z-index: 3;
-        height: -20px;
+        /* height: -20px; */
     }
     
     .addresses ul {
@@ -98,13 +103,13 @@
         /* background-color: tomato; */
     }
     .icon_address  {
-        width: 85px; /* Adjust icon size */
+        width: 4.5vw; /* Adjust icon size */
 
     }
 
     .addresses_text {
         font-family: 'AddressFont', sans-serif;
-        font-size: 160%;
+        font-size: 1.3vw;
         color: white;  
     }
     .item:nth-child(1){
@@ -121,7 +126,7 @@
     /* ------- language part -------- */
 
     .dividerLang{
-    grid-column: 9;
+    grid-column: 100;
     grid-row: 1;
     font-family:normal_font2_100 ;
     color: rgb(69, 70, 70);
@@ -131,7 +136,9 @@
 
 }
     .lang{
-        grid-area:lang;
+        grid-column: 100;
+        grid-row: 1;
+        /* grid-area:lang; */
         width: 100%; 
          transform: translate(-20%, -15%);
         /* background-color: black; */
@@ -172,8 +179,11 @@
 
 /* ------- logo ------ */
 .logo{
-    grid-area:logo;
+    grid-column: 14/ span 15;
+    grid-row: 1/span2;
+    /* grid-area:logo; */
     width:100%;
+    margin-bottom: 15%;
     /* background-color: tomato; */
     
     z-index: 10;
@@ -183,8 +193,8 @@
 .logo img{
     /* background-color: tomato; */
     opacity: 0;
-    transform: translate(0%,-18%);
-    width:160%;
+    transform: translate(0%,16%);
+    width:75%;
     /* box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); */
     filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
 
@@ -199,13 +209,14 @@
 .menu{
     position:relative;
     /* grid-area:menuTxt; */
-    grid-column: 4/span5;
+    margin-top: -0.3%;
+    grid-column: 19/span5;
     grid-row:2;
     background-image: url("../en pic/En laptop bg logo,menu and title.svg");
     background-repeat: no-repeat; 
     width: 87%;
     /* background-size: 85%; */
-    transform: translate(5%,-11.5%);
+    transform: translate(0%,-11.5%);
     /* background-color: brown; */
     z-index: 5;
     /* overflow: hidden; */
@@ -245,7 +256,7 @@ z-index: 20;
 
     font-family: 'menu_font', sans-serif; 
     color:white;
-    font-size: 260%;
+    font-size: 2vw;
     /* margin-left: 1%; */
 }
 .ElectroMTxt {
@@ -259,13 +270,16 @@ z-index: 20;
     /* ------ davudtech title ------- */
 
 .title{
-    grid-area:titleDT;
+    grid-column: 75/ span 15;
+    grid-row: 2;
+    margin-top: -9%;
+    /* grid-area:titleDT; */
     /* background-color: aqua; */
     font-family: 'davudtech_font', sans-serif; 
     color:black;
     align-items: center;
-    transform: translate(-51%,-13%);
-    font-size: 200%;
+    /* transform: translate(-51%,-13%); */
+    font-size: 3vw;
     z-index: 5;
     text-shadow: 
     0px 0px 15px rgb(255, 215, 0), /* Top-left outline */
