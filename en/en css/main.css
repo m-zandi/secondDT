@@ -177,16 +177,24 @@
     z-index: 10; 
 }
  .aboutImage{
-    grid-column: 9/span 15;
-    grid-row: 1/span 75;
-    width: 30vw;
-    height: 30vw;
+    /* position: absolute; */
+
+    grid-column: 6/span 15;
+    grid-row: 1/span 6;
+    width: 100%;
+    /* height: 30vw; */
+    min-height: 65vh;
     background-image: url('../../image/about.png');
-    background-size: 100%;
+    /* background-size: 100%; */
     background-repeat: no-repeat;
+
+    background-size: contain; /* Ensures the entire image is visible */
+
  }
 
  .yearsWork,.successRate,.satisfiedClients{
+    /* transform: translateX(43%); */
+    /* margin-left: -200px; */
     margin: 4px;
     display: flex;
     font-family: statisticFont;
@@ -201,10 +209,13 @@
     0px 0px 6px black,  /* Top-right outline */
     0px 0px 0px black,  /* Bottom-left outline */
     0px 0px 0px black;   /* Bottom-right outline */
+    background-position: center; /* Centers the image */
+    background-size: contain; /* Ensures the entire image is visible */
  }
 
  .yearsWork{
     background-color: rgb(97, 97, 97);
+
  }
 .yearsWork.visible{
     animation: yearsWorkExAnim 4s forwards ease-in-out;
@@ -349,7 +360,7 @@
     color: white;
     display:flex;
     grid-column: 22/span 15;
-    grid-row: 2;
+    grid-row: 1;
     text-shadow: 
     0px 0px 15px black, /* Top-left outline */
     0px 0px 15px black,  /* Top-right outline */
@@ -378,7 +389,7 @@
 .aboutSlogan{
     display:flex;
     grid-column: 22/span 15; ;
-    grid-row: 3;
+    grid-row: 2;
     color: white;
     font-family:sloganFont ;
     font-size: 230%;;
@@ -404,7 +415,7 @@
 
 .aboutDetails{
     grid-column: 22/span 15;;
-    grid-row: 4;
+    grid-row: 3;
     margin-top: 0%;
     font-family: 'normal_font', sans-serif;
     color:white;
@@ -425,7 +436,7 @@
 
 .aboutPros{
     grid-column: 22/span 15;;
-    grid-row: 5; 
+    grid-row: 4; 
     display:flex;
     flex-direction: column;
     gap:9%;
@@ -464,8 +475,8 @@
 
 
 .aboutEmergency{
-    grid-column: 28/span 12;;
-    grid-row: 5 ;
+    grid-column: 29/span 11;
+    grid-row: 4 ;
     display: flex;
     flex-direction: column;
     color:white;
@@ -768,9 +779,9 @@
 .moveUpper{
 
     position: fixed;
-    right:-13.9%;
+    right:-12%;
     bottom: 10.7%;
-    z-index: 5;
+    z-index: 100;
     opacity: 0;
     transition: opacity 2s ease;
 
