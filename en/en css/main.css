@@ -799,4 +799,10 @@
 
 }
 
-
+.gap_line_last_line_product{
+    display:flex;
+    grid-column: 1/span 40;
+    grid-row: 10;
+    flex-direction: row;
+    margin-bottom: 30vh;
+}

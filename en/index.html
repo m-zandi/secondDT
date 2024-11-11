@@ -3,6 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+// -- about us  menu click button --
+function scrollToAbout() {
+    const aboutUs = document.getElementById("aboutId");
+    const offset = -250; // Adjust this value to bring it higher or lower
+    const topPosition = aboutUs.getBoundingClientRect().top + window.pageYOffset + offset;
+
+    window.scrollTo({
+        top: topPosition,
+        behavior: "smooth"
+    });
+}
+
+// -- porfolio button --
+function scrollToPortfolio() {
+    const aboutUs = document.getElementById("portfolioId");
+    const offset = 0; // Adjust this value to bring it higher or lower
+    const topPosition = aboutUs.getBoundingClientRect().top + window.pageYOffset + offset;
+
+    window.scrollTo({
+        top: topPosition,
+        behavior: "smooth"
+    });
+}
+
+// -- products -- 
+function scrollToProducts() {
+    const aboutUs = document.getElementById("productsId");
+    const offset = 0; // Adjust this value to bring it higher or lower
+    const topPosition = aboutUs.getBoundingClientRect().top + window.pageYOffset + offset;
+
+    window.scrollTo({
+        top: topPosition,
+        behavior: "smooth"
+    });
+}
+//  -- move to address down in footer --
+function scrollToFooter() {
+    const aboutUs = document.getElementById("footerId");
+    const offset = 0; // Adjust this value to bring it higher or lower
+    const topPosition = aboutUs.getBoundingClientRect().top + window.pageYOffset + offset;
+
+    window.scrollTo({
+        top: topPosition,
+        behavior: "smooth"
+    });
+}
+
+
+
+    </script>
     
     <title>DavudTech - Electric motor Fixing</title>
     <link rel="stylesheet" href="style.css">
@@ -103,15 +154,15 @@
     <!-- MENU -->
     <div class="menu">
         <ul>
-            <li><a href=""><span class="menu_text">Sharp</span></a></li>
-            <li><a href=""><span class="menu_text">Services</span></a></li>
+            <li><a href="#" onclick="scrollToAbout()"><span class="menu_text">About us</span></a></li>
+            <li><a href="#" onclick="scrollToPortfolio()"><span class="menu_text">Portfolio</span></a></li>
 
-            <li><a href=""><span class="menu_text">Products</span></a></li>
+            <li><a href="#" onclick="scrollToProducts()"><span class="menu_text">Products</span></a></li>
 
-            <li class="ElectroMTxt"><a href=""><span class="menu_text">Electromotors</span></a></li>
+            <li class="menu_text"><a href="#" onclick="scrollToFooter()"><span class="menu_text">Contact Us</span></a></li>
 
-            <li class="learningsTxt"><a href=""><span class="menu_text">Learnings</span></a></li>
-            <li class="resumeTxt"><a href=""><span class="menu_text">Resume</span></a></li>
+            <!-- <li class="learningsTxt"><a href=""><span class="menu_text">Learnings</span></a></li>
+            <li class="resumeTxt"><a href=""><span class="menu_text">Resume</span></a></li> -->
         
 
     </ul>
@@ -142,11 +193,11 @@
         <span class="sloganSpecial">Industries</span>
     </div>
 
-    <div class="heroDetails">
+    <div class="heroDetails" >
         <p>Our company provides reliable electric motor repair services tailored to meet the needs of every industry. We ensure optimal performance and longevity for all types of electric motors, keeping your operations running smoothly.</p>
     </div>
 <!-- first divider -->
-    <div class="firstDivider"></div>
+    <div class="firstDivider" id="test2"></div>
 </div>
 
 <!-- ----move upper --- -->
@@ -158,7 +209,7 @@
 
 
 <!-- ----- about part ------- -->
-<div class="about">
+<div class="about" id="aboutId">
     <div class="aboutImage">
         <div class="yearsWork">
             <span>Years Work Experience</span>
@@ -225,7 +276,7 @@
 </div>
 
 <!-- ------- portfolio ------- -->
-<div class="portfolio">
+<div class="portfolio" id="portfolioId">
     <!-- second Divider -->
     <div class="secondDivider"></div>
     <div class="portfolioAllIntro">
@@ -288,7 +339,7 @@
 </div>
 <div class="thirdDivider"></div>
 <!-- products part  -->
-<div class="products">
+<div class="products" id="productsId">
     <div class="productIntro">
         <span class="productDash">___</span>
         <span class="ProductTxt">Products</span>
@@ -322,8 +373,9 @@
         </div>
 
     </div>
+    <div class="gap_line_last_line_product"></div>
 </div>
-<div class="footer">
+<div class="footer" id="footerId">
     <span class="contactText">Contact</span>
     <div class="footerAddresses">
         <!-- <div class="footerIconText"> -->

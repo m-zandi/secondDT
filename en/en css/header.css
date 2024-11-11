@@ -210,7 +210,7 @@
     position:relative;
     /* grid-area:menuTxt; */
     margin-top: -0.3%;
-    grid-column: 19/span5;
+    grid-column: 19/span6;
     grid-row:2;
     background-image: url("../en pic/En laptop bg logo,menu and title.svg");
     background-repeat: no-repeat; 
@@ -229,7 +229,7 @@ grid-column:4/span3;
 background-image: url("../en pic/En laptop menu bg.svg");
 background-repeat: no-repeat;
 background-size: 55%;
-gap:1.6%;
+gap:4.6%;
 display: flex;
 /* flex-direction: row; */
 /* flex-wrap: wrap; */
@@ -242,7 +242,7 @@ z-index: 20;
 
 }
 .menu li{
-    transform: translate(-29%,9%);
+    transform: translateY(9%);
     display: flex;
     /* gap:22px; */
 

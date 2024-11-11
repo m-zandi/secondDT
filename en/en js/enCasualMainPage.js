@@ -47,3 +47,28 @@ scrollToTopBtn.addEventListener('click', (e) => {
 
 // Add scroll event listener to trigger the show/hide function
 window.addEventListener('scroll', handleScroll);
+
+
+//  -- menu clicking -- 
+
+// function scrollToAbout() {
+//     document.getElementById("aboutUs").scrollIntoView({
+//         behavior: "smooth"
+//     });
+// }
+
+// function scrollToAbout() {
+//     document.getElementById("test2").scrollIntoView({
+//         behavior: "smooth"
+//     });
+// }
+function scrollToAbout() {
+    const aboutUs = document.getElementById("aboutUs");
+    const offset = -250; // Adjust this value to bring it higher or lower
+    const topPosition = aboutUs.getBoundingClientRect().top + window.pageYOffset + offset;
+
+    window.scrollTo({
+        top: topPosition,
+        behavior: "smooth"
+    });
+}
