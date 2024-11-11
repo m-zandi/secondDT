@@ -34,7 +34,7 @@
     grid-column: 1/ span 25;
     grid-row: 1;
     /* grid-area:sM; */
-    transform: translate(-1%,-4px);
+    transform: translate(-1%,-4%);
     background-image: url("../en pic/En laptop social media bg - FFD700 laptop.svg");
     background-repeat: no-repeat;
     /* background-color: black; */
@@ -121,7 +121,7 @@
     /* ------- language part -------- */
 
     .dividerLang{
-    grid-column: 100;
+    grid-column: 99;
     grid-row: 1;
     font-family:normal_font2_100 ;
     color: rgb(69, 70, 70);
@@ -134,10 +134,12 @@
         grid-column: 100;
         grid-row: 1;
         /* grid-area:lang; */
-        width: 100%; 
-         transform: translate(-20%, -15%);
-        /* background-color: black; */
+        width: 50%; 
+         /* transform: translate(-20%, -15%); */
+        /* background-color: red; */
         z-index: 2;
+        /* text-align: center; */
+
     }
     .lang ul{
         gap:5px;
@@ -151,20 +153,25 @@
     }
 
     .lang li:nth-child(1){
-        transform: translateX(-45%);
+        text-align: center;
+        justify-content: center;
+
+        /* transform: translateX(-45%); */
         font-family: 'normal_font_bold', sans-serif;
         color: white;
-        font-size: 15px;  
+        font-size: .9vw;  
         /* background-color: brown; */
 
     }
 
 
     .lang li:nth-child(2) {
+        text-align: center;
+        justify-content: center;
         
         font-family: 'normal_font', sans-serif;
         color: white;
-        font-size: 12px;
+        font-size: .7vw;
         /* background-color: purple; */
     } 
 
@@ -205,11 +212,11 @@
     position:relative;
     /* grid-area:menuTxt; */
     margin-top: -0.3%;
-    grid-column: 19/span6;
+    grid-column: 18/span 72;
     grid-row:2;
     background-image: url("../en pic/En laptop bg logo,menu and title.svg");
     background-repeat: no-repeat; 
-    width: 87%;
+    width: 100%;
     /* background-size: 85%; */
     transform: translate(0%,-11.5%);
     /* background-color: brown; */
@@ -228,10 +235,10 @@ gap:4.6%;
 display: flex;
 /* flex-direction: row; */
 /* flex-wrap: wrap; */
-
+/* align-items: center; */
 width:110%;
 height:130px;
-transform: translate(8%,-9%);
+transform: translate(9%,-9%);
 /* background-color: aqua; */
 z-index: 20;
 

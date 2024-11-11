@@ -193,7 +193,7 @@
     margin: 4px;
     display: flex;
     font-family: statisticFont;
-    font-size:18px;
+    font-size:110%;
     width:20%;
     height:50px;
     gap:4px;
@@ -376,9 +376,11 @@
  .aboutCompany span:nth-child(1){
 
     color: rgb(255, 215, 0);
-    transform: translateY(-30px);
-    font-size: 50px;
+    transform: translateY(-20%);
+    font-size: 2.5vw;
     font-family: dashFont;
+    align-items: center;
+    text-align: center;
 
 
 }
@@ -387,7 +389,7 @@
     margin-left: 5%;
     font-family: 'normal_font_bold', sans-serif;
     color: rgb(255, 215, 0);
-    font-size: 200%;
+    font-size: 1.6vw;
     z-index: 1;
 }
 

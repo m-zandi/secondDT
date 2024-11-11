@@ -136,7 +136,7 @@
     flex-direction: row;
     color:white;
     font-family:normal_font_bold ;
-    font-size: 20px;
+    font-size: 120%;
     gap:8px;
     align-items: center;
     margin-bottom: 5px;
@@ -144,7 +144,7 @@
 .footerLang span:nth-child(1){
     text-decoration: underline;
     font-family:normal_font_bold_2 ;
-    font-size: 25px;
+    font-size: 130%;
 }
 .myAddress{
     display: flex;
@@ -153,7 +153,7 @@
     flex-direction: row;
     color:white;
     font-family:normal_font ;
-    font-size: 15px;
+    font-size: 120%;
     gap:4px;
 }
 
