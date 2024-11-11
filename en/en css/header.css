@@ -9,25 +9,20 @@
     grid-template-columns:repeat(100,1fr);
     overflow-x: hidden;
     grid-template-rows: auto;
-    grid-template-areas: 
-    "sM sM sM sM  adr adr adr adr lang"
-    ". . . logo menuTxt menuTxt menuTxt titleDT test"
-    ". dash wel wel wel . . . ."
-    ". slog slog slog slog slog . . ."
-    ". detai detai detai detai . . . .";
+
     width: 100%; 
     z-index: 5;
     overflow: hidden
 }
 /* except language black bg for top header except lang */
 .bgTopHeader{
-    grid-column: 1 /span 20;
+    grid-column: 1 /span 100;
     grid-row:1;
     background-color:black;
     margin:0;
     padding: 0;
     z-index:0;
-    /* transform: translateY(-15px); */
+    transform: translateY(-15px);
     /* width:100%; */
 
 }
@@ -77,7 +72,7 @@
 
     /* ---- addresses phone , email address---- */
     .addresses {
-        grid-column: 20/ span 79;
+        grid-column: 20/ span 80;
         grid-row: 1;
         /* grid-area: adr; */
         width: 100%;
@@ -88,10 +83,10 @@
     .addresses ul {
         display: flex;
         flex-direction: row;
-        gap: 10px; /* Adjust space between each item as needed */
+        gap: .1%; /* Adjust space between each item as needed */
         /*  padding: 0; */
         margin-left: 90px; 
-        transform: translate(-3%,-23%);
+        transform: translate(-2%,-23%);
         /* background-color: black; */
 
     }

@@ -62,13 +62,3 @@ window.addEventListener('scroll', handleScroll);
 //         behavior: "smooth"
 //     });
 // }
-function scrollToAbout() {
-    const aboutUs = document.getElementById("aboutUs");
-    const offset = -250; // Adjust this value to bring it higher or lower
-    const topPosition = aboutUs.getBoundingClientRect().top + window.pageYOffset + offset;
-
-    window.scrollTo({
-        top: topPosition,
-        behavior: "smooth"
-    });
-}
