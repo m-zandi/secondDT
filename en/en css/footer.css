@@ -156,3 +156,12 @@
     font-size: 15px;
     gap:4px;
 }
+
+ /* - last line blank for footer -  */
+.last_line{
+    display:flex;
+    grid-column: 1/span 40;
+    grid-row: 8;
+    flex-direction: row;
+    margin-bottom: 7vh;
+}
