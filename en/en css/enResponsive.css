@@ -2,11 +2,7 @@
  --1280px to infinity-- */
 
 @media (min-width:1280px) {
-    .addresses ul{
-        transform: translate(-3%,-23%);
 
-
-    }
     .dividerLang{
         grid-column: 100;
         /* grid-row: 1 */
@@ -21,36 +17,19 @@
         transform: translateX(0%);
 
     }
-    .addresses ul {
-        transform: translate(0,-23%);
-
-    }
 
 }
 
 /* Typical Devices: Small laptops, lower-resolution desktops  --1024px to 1279px--*/
 @media (min-width:1024px) and (max-width:1279px){
-    .addresses{
-        grid-column: 20/ span 78;
 
-    }
-    .addresses_text{
-        font-size: 1.1vw;
-    }
-    .addresses ul{
-        transform: translate(-11%,-23%);
-
-
-    }
     .dividerLang{
         grid-column: 99;
-        /* grid-row: 1 */
         transform: translateX(21px);
 
     }
     .lang{
         grid-column: 100;
-        /* transform: translate(0%, -15%); */
         margin-left: -20%;
 
     }
@@ -91,7 +70,6 @@
 
     }
     .aboutCompany span:nth-child(1){
-        /* font-size: 200%; */
         transform: translateY(-10%);
 
 
@@ -158,3 +136,237 @@
 
     }
 }
+
+@media (max-width:1280px){
+    .addresses {
+        grid-column: 18/ span 80;
+    }
+    .addresses ul{
+        /* margin-right: -10%; */
+        transform: translateY(-32%);
+    }
+    .item:nth-child(1){
+        flex-basis: 45%;
+    }
+    .item:nth-child(2){
+        flex-basis: 58%;
+    }
+    .item:nth-child(3){
+        flex-basis: 65%;
+    }
+
+    /* about part */
+    .aboutCompany{
+        transform: translateY(12%);
+
+    }
+    .aboutCompany span:nth-child(1){
+        /* font-size: 200%; */
+        transform: translateY(-12%);
+
+
+    }
+    .aboutSlogan{
+        font-size: 150%;;
+        transform: translateY(-160%);
+
+    }
+    .aboutDetails{
+        transform: translateY(-20%);
+
+
+    }
+    .aboutPros{
+        transform: translateY(0%);
+
+    }
+    .aboutEmergency{
+        transform: translate(22%,0%);
+
+    }
+    .aboutEmergency span:nth-child(2){
+        font-size: 100%;
+
+    }
+
+/* footer */
+.myAddress{
+    transform: translateX(-10%);
+    font-size: 90%;
+
+
+}
+
+/*  */
+
+    /* move upper  */
+    .moveUpper{
+        right:-19%;
+        bottom: 10.7%;
+    }
+    .moveUpper img{
+        width: 15%;
+
+    }
+}
+@media(max-width:1089px){
+    .aboutSlogan{
+        font-size: 150%;;
+        transform: translateY(-135%);
+
+    }
+    .aboutDetails{
+        transform: translateY(-60%);
+
+
+    }
+    .aboutPros{
+        transform: translateY(-140%);
+
+    }
+    .aboutEmergency{
+        transform: translate(22%,-140%);
+
+    }
+    .aboutEmergency span:nth-child(2){
+        font-size: 100%;
+
+    }
+
+    /* move upper */
+    .moveUpper{
+        right:-22%;
+        bottom: 10.7%;
+    }
+    .moveUpper img{
+        width: 15%;
+
+    }
+
+}
+@media (min-width:2178px){
+    /* addresses */
+    .addresses {
+        grid-column: 22/ span 76;
+    }
+/* about */
+@keyframes yearsWorkExAnim{
+    0% {
+        width: 20%;
+    }
+
+    100% {
+        width: 50%;
+
+    }
+}
+@keyframes successRateAnim{
+
+    0% {
+        width: 20%;
+    }
+
+
+    100% {
+        width: 45%;
+
+
+    }
+}
+@keyframes satisfiedClientsAnim{
+    0% {
+        width: 20%;
+        /* opacity: 0; */
+
+    }    
+
+
+    100% {
+        width: 40%;
+
+    }
+}
+    .aboutDetails{
+        transform: translateY(0%);
+
+
+    }
+    .aboutPros{
+        transform: translateY(90%);
+
+    }
+    .aboutEmergency{
+        transform: translate(22%,99%);
+
+    }
+    .aboutEmergency span:nth-child(2){
+        font-size: 180%;
+
+    }
+
+    /* move upper  */
+    .moveUpper{
+        right:-9%;
+        bottom: 10.7%;
+    }
+    .moveUpper img{
+        width: 25%;
+
+    }
+}
+/* @media (min-width: 768px) and (max-width: 1023px) { */
+@media (min-width:1725px) and (max-width:2178px){
+    .aboutDetails{
+        visibility: hidden;
+    }
+    /* about */
+@keyframes yearsWorkExAnim{
+    0% {
+        width: 20%;
+    }
+
+    100% {
+        width: 50%;
+
+    }
+}
+@keyframes successRateAnim{
+
+    0% {
+        width: 20%;
+    }
+
+
+    100% {
+        width: 45%;
+
+
+    }
+}
+@keyframes satisfiedClientsAnim{
+    0% {
+        width: 20%;
+        /* opacity: 0; */
+
+    }    
+
+
+    100% {
+        width: 40%;
+
+    }
+}
+
+}
+ @media (min-width:1968px) and (max-width:2178px){
+
+        /* move upper  */
+        .moveUpper{
+            right:-11%;
+            bottom: 10.7%;
+        }
+        .moveUpper img{
+            width: 20%;
+    
+        }
+ }

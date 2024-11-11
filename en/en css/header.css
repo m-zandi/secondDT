@@ -85,8 +85,8 @@
         flex-direction: row;
         gap: .1%; /* Adjust space between each item as needed */
         /*  padding: 0; */
-        margin-left: 90px; 
-        transform: translate(-2%,-23%);
+        margin-left: 59px; 
+        /* transform: translate(-2%,-23%); */
         /* background-color: black; */
 
     }
@@ -94,9 +94,20 @@
     .item {
         display: flex;
         align-items: center;
-        gap: 5px; /* Adjust space between icon and text as needed */
+        gap: 1px; /* Adjust space between icon and text as needed */
         /* background-color: tomato; */
+        width: 100%;
     }
+    .item:nth-child(1){
+        flex-basis: 40%;
+    }
+    .item:nth-child(2){
+        flex-basis: 50%;
+    }
+    .item:nth-child(3){
+        flex-basis: 65%;
+    }
+
     .icon_address  {
         width: 4.5vw; /* Adjust icon size */
 
@@ -107,14 +118,7 @@
         font-size: 1.3vw;
         color: white;  
     }
-    .item:nth-child(1){
-        margin-right: 2%;
-    }
 
-    .item:nth-child(2){
-        margin-right: 2%;
-    }
-    
 
     
 
