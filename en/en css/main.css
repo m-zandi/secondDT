@@ -784,6 +784,7 @@
 .moveUpper{
 
     position: fixed;
+    /* display: flex; */
     right:-12%;
     bottom: 10.7%;
     z-index: 100;
