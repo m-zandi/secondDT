@@ -262,12 +262,60 @@
     grid-column: 4/span 20 ;
     grid-row:6/ span 3;
     font-size: 2.5vw;
+}
+/* --------- about ---------- */
+.aboutImage{
+    grid-column: 6/span 25;
+    grid-row: 1/span 6;
+}
+.aboutCompany{
+grid-column: 6/span 25;
+grid-row: 7;
+}
+.aboutCompany span:nth-child(1){
 
+    /* color: rgb(255, 215, 0); */
+    transform: translateY(-60%);
+    font-size: 5vw;
+}
+.aboutCompany span:nth-child(2){
 
+    /* color: rgb(255, 215, 0); */
+    transform: translateY(-20%);
+    font-size: 3.8vw;
 }
 
 
 
+.aboutSlogan{
+    display:flex;
+    grid-column: 6/span 25; ;
+    grid-row: 8;
+}
 
+.aboutDetails{
+    grid-column: 6/span 25;;
+    grid-row: 9;
+}
+
+.aboutDetails p{
+
+ 
+    font-size: 120%;          
+}
+.aboutPros{
+    grid-column: 6/span 15;;
+    grid-row: 10; 
+    margin-bottom: 30px;
+}
+.aboutEmergency{
+    grid-column: 22/span 12;
+    grid-row: 10 ;
+}
+.aboutEmergency span:nth-child(2){
+    /* font-family: AddressFont; */
+    font-size: 2.3vw;
+}
 
 }
+
