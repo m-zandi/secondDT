@@ -124,9 +124,11 @@
     flex-direction: row;
     gap:20px;
     align-items: center;
+    transform: translateX(-75%);
+
 }
 .footerSocial img{
-    width:1.2vw;
+    width:1.5vw;
     
 }
 .footerLang{
@@ -136,7 +138,7 @@
     flex-direction: row;
     color:white;
     font-family:normal_font_bold ;
-    font-size: 120%;
+    font-size: 1.1vw;
     gap:8px;
     align-items: center;
     margin-bottom: 5px;
@@ -153,7 +155,7 @@
     flex-direction: row;
     color:white;
     font-family:normal_font ;
-    font-size: 120%;
+    font-size: 1vw;
     gap:4px;
 }
 

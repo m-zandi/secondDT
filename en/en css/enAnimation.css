@@ -1,10 +1,10 @@
 @keyframes yearsWorkExAnim{
     0% {
-        width: 20%;
+        width: 7.3vw;
     }
 
     100% {
-        width: 70%;
+        width: 22vw;
 
     }
 }
@@ -60,12 +60,12 @@
 @keyframes successRateAnim{
 
     0% {
-        width: 20%;
+        width: 7.3vw;
     }
 
 
     100% {
-        width: 65%;
+        width: 20vw;
 
 
     }
@@ -106,14 +106,13 @@
 
 @keyframes satisfiedClientsAnim{
     0% {
-        width: 20%;
-        /* opacity: 0; */
+        width: 7.3vw;
 
     }    
 
 
     100% {
-        width: 60%;
+        width: 18vw;
 
     }
 }

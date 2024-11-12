@@ -1,28 +1,145 @@
-/* Typical Devices: Large desktops, high-resolution monitors
- --1280px to infinity-- */
 
-@media (min-width:1280px) {
+@media (min-width:1024px) and (max-width:1200px){
+         /* -- header social media -- */
+         .socialMedia ul{
+            transform: translate(-10%,-60%);
+    
+        }
 
-    .dividerLang{
-        grid-column: 100;
-        /* grid-row: 1 */
+    /* -- address -- */
+    .addresses {
+        grid-column: 18/ span 80;
     }
-    .lang{
-        grid-column: 100;
-        /* transform: translate(0%, -15%); */
-        margin-left: -20%;
+    .addresses ul{
+        transform: translateY(-32%);
+    }
+    .item:nth-child(1){
+        flex-basis: 45%;
+    }
+    .item:nth-child(2){
+        flex-basis: 58%;
+    }
+    .item:nth-child(3){
+        flex-basis: 65%;
+    }
+
+
+
+        /* -- lang -- */
+        .dividerLang{
+            grid-column: 100;
+            /* grid-row: 1 */
+            margin-left: 20%;
+
+        }
+        .lang{
+            grid-column: 100;
+            transform: translate(0%, -8%);
+            margin-left: -20%;
+    
+        }
+
+        /* -- menu -- */
+        .menu{
+            margin-top: -1.5%;
+    
+        }
+        .menu ul {
+            transform: translate(9%,-11%);
+    
+        }
+        .menu li{
+            transform: translateY(6%);
+    
+        }
+
+       /* -- title -- */
+       .title{
+        margin-top: -19%;
+    }
+
+    /* -- about -- */
+    .yearsWork,.successRate,.satisfiedClients{
+        font-size:75%;
 
     }
-    .lang li:nth-child(1){
-        transform: translateX(0%);
+    .yearsWork span:nth-child(2),.successRate  span:nth-child(2),.satisfiedClients  span:nth-child(2){
+        font-size:100%;
 
     }
+ /* -- about -- */
+    .aboutCompany{
+        transform: translateY(0%);
+
+ }
+ .aboutCompany span:nth-child(1){
+    /* font-size: 200%; */
+    transform: translateY(-10%);
+
+
+}
+    .aboutSlogan{
+        font-size: 150%;;
+        transform: translateY(-155%);
+
+    }
+    .aboutDetails{
+        transform: translateY(-75%);
+
+
+    }
+    .aboutPros{
+        transform: translateY(-170%);
+
+    }
+    .aboutEmergency{
+        transform: translate(22%,-170%);
+
+    }
+    .aboutEmergency span:nth-child(2){
+        font-size: 100%;
+
+    }
+    /* footer */
+
+
+
+
+
+
+
 
 }
 
 /* Typical Devices: Small laptops, lower-resolution desktops  --1024px to 1279px--*/
-@media (min-width:1024px) and (max-width:1279px){
 
+@media (min-width:1200px) and (max-width:1279px){
+
+     /* -- header social media -- */
+     .socialMedia ul{
+        transform: translate(0%,50%);
+
+    }
+
+    /* -- address -- */
+    .addresses {
+        grid-column: 18/ span 80;
+    }
+    .addresses ul{
+        transform: translateY(-32%);
+    }
+    .item:nth-child(1){
+        flex-basis: 45%;
+    }
+    .item:nth-child(2){
+        flex-basis: 58%;
+    }
+    .item:nth-child(3){
+        flex-basis: 65%;
+    }
+
+
+    /* -- lang header -- */
     .dividerLang{
         grid-column: 99;
         transform: translateX(21px);
@@ -38,9 +155,11 @@
 
     }
     .lang li:nth-child(2){
-        font-size: 12px;
+        font-size: .7vw;
 
     }
+
+    /* -- menu -- */
     .menu{
         margin-top: -1.5%;
 
@@ -109,148 +228,103 @@
         font-size:120%;
 
     }
-    .footerSocial{
-        transform: translateX(-75%);
-    }
-    .footerSocial img{
-        width:1.7vw;
-        
-    }
-    .footerLang{
-        font-size: 90%;
 
 
-    }
-    .myAddress{
-        transform: translateX(-25%);
-        font-size: 90%;
 
 
-    }
-    .moveUpper{
-        right:-24%;
-        bottom: 10.7%;
-    }
-    .moveUpper img{
-        width: 15%;
 
-    }
+
 }
 
-@media (max-width:1280px){
-    .addresses {
-        grid-column: 18/ span 80;
-    }
+@media (min-width:1279px) and (max-width:1881px){
+
     .addresses ul{
-        /* margin-right: -10%; */
         transform: translateY(-32%);
     }
-    .item:nth-child(1){
-        flex-basis: 45%;
-    }
-    .item:nth-child(2){
-        flex-basis: 58%;
-    }
-    .item:nth-child(3){
-        flex-basis: 65%;
-    }
-
-    /* about part */
-    .aboutCompany{
-        transform: translateY(12%);
-
-    }
-    .aboutCompany span:nth-child(1){
-        /* font-size: 200%; */
-        transform: translateY(-12%);
 
 
-    }
-    .aboutSlogan{
-        font-size: 150%;;
-        transform: translateY(-160%);
-
-    }
-    .aboutDetails{
-        transform: translateY(-20%);
 
 
+}
+
+
+
+
+
+/* Typical Devices: Large desktops, high-resolution monitors
+ --1280px to infinity-- */
+
+ @media (min-width:1280px) {
+
+    .dividerLang{
+        grid-column: 100;
+        /* grid-row: 1 */
     }
-    .aboutPros{
+    .lang{
+        grid-column: 100;
+        /* transform: translate(0%, -15%); */
+        margin-left: -20%;
+
+    }
+    .lang li:nth-child(1){
+        transform: translateX(0%);
+
+    }
+
+}
+
+/* ------ 1024px - 1280px individual settings ---- */
+
+@media (min-width:1089px) and (max-width:1711px){
+     /* -- about -- */
+     .aboutCompany{
         transform: translateY(0%);
 
-    }
-    .aboutEmergency{
-        transform: translate(22%,0%);
-
-    }
-    .aboutEmergency span:nth-child(2){
-        font-size: 100%;
-
-    }
-
-/* footer */
-.myAddress{
-    transform: translateX(-10%);
-    font-size: 90%;
+ }
+ .aboutCompany span:nth-child(1){
+    /* font-size: 200%; */
+    transform: translateY(-11%);
 
 
 }
-
-/*  */
-
-    /* move upper  */
-    .moveUpper{
-        right:-19%;
-        bottom: 10.7%;
-    }
-    .moveUpper img{
-        width: 15%;
-
-    }
-}
-@media(max-width:1089px){
     .aboutSlogan{
         font-size: 150%;;
-        transform: translateY(-135%);
+        transform: translateY(-155%);
 
     }
     .aboutDetails{
-        transform: translateY(-60%);
+        transform: translateY(-45%);
 
 
     }
     .aboutPros{
-        transform: translateY(-140%);
+        transform: translateY(-100%);
 
     }
     .aboutEmergency{
-        transform: translate(22%,-140%);
-
-    }
-    .aboutEmergency span:nth-child(2){
-        font-size: 100%;
+        transform: translate(22%,-100%);
 
     }
 
-    /* move upper */
-    .moveUpper{
-        right:-22%;
-        bottom: 10.7%;
-    }
-    .moveUpper img{
-        width: 15%;
-
-    }
 
 }
-@media (min-width:2178px){
-    /* addresses */
-    .addresses {
-        grid-column: 22/ span 76;
+
+@media (min-width:1150px) and (max-width:1711px){
+    .aboutPros{
+        transform: translateY(-30%);
+
     }
+    .aboutEmergency{
+        transform: translate(22%,-30%);
+
+    }
+
+
+}
+
+@media (min-width:1431px) and (max-width:1725px){
 /* about */
-@keyframes yearsWorkExAnim{
+/* @keyframes yearsWorkExAnim{
     0% {
         width: 20%;
     }
@@ -273,19 +347,30 @@
 
     }
 }
+
 @keyframes satisfiedClientsAnim{
     0% {
-        width: 20%;
-        /* opacity: 0; */
+        width: 2vw;
 
     }    
 
 
     100% {
-        width: 40%;
+        width: 20vw;
 
-    }
+    } */
 }
+
+/*  */
+/* -- large monitor -- */
+
+@media (min-width:2178px){
+    /* addresses */
+    .addresses {
+        grid-column: 22/ span 76;
+    }
+/* about */
+
     .aboutDetails{
         transform: translateY(0%);
 
@@ -299,74 +384,47 @@
         transform: translate(22%,99%);
 
     }
-    .aboutEmergency span:nth-child(2){
-        font-size: 180%;
 
-    }
 
-    /* move upper  */
-    .moveUpper{
-        right:-9%;
-        bottom: 10.7%;
-    }
-    .moveUpper img{
-        width: 25%;
 
-    }
 }
 /* @media (min-width: 768px) and (max-width: 1023px) { */
-@media (min-width:1725px) and (max-width:2178px){
-    .aboutDetails{
-        visibility: hidden;
-    }
-    /* about */
-@keyframes yearsWorkExAnim{
-    0% {
-        width: 20%;
-    }
 
-    100% {
-        width: 50%;
-
-    }
-}
-@keyframes successRateAnim{
-
-    0% {
-        width: 20%;
-    }
-
-
-    100% {
-        width: 45%;
-
-
-    }
-}
-@keyframes satisfiedClientsAnim{
-    0% {
-        width: 20%;
-        /* opacity: 0; */
-
-    }    
-
-
-    100% {
-        width: 40%;
-
-    }
-}
-
-}
- @media (min-width:1968px) and (max-width:2178px){
-
-        /* move upper  */
-        .moveUpper{
-            right:-11%;
-            bottom: 10.7%;
+ @media (min-width:1800px) and (max-width:2510px){
+    @keyframes yearsWorkExAnim{
+        0% {
+            width: 7.3vw;
         }
-        .moveUpper img{
-            width: 20%;
+    
+        100% {
+            width: 18vw;
     
         }
+    }
+    @keyframes successRateAnim{
+
+        0% {
+            width: 7.3vw;
+        }
+    
+    
+        100% {
+            width: 16vw;
+    
+    
+        }
+    }
+    @keyframes satisfiedClientsAnim{
+        0% {
+            width: 7.3vw;
+    
+        }    
+    
+    
+        100% {
+            width: 14vw;
+    
+        }
+    }
+
  }
