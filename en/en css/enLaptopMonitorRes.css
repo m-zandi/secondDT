@@ -322,46 +322,7 @@
 
 }
 
-@media (min-width:1431px) and (max-width:1725px){
-/* about */
-/* @keyframes yearsWorkExAnim{
-    0% {
-        width: 20%;
-    }
 
-    100% {
-        width: 50%;
-
-    }
-}
-@keyframes successRateAnim{
-
-    0% {
-        width: 20%;
-    }
-
-
-    100% {
-        width: 45%;
-
-
-    }
-}
-
-@keyframes satisfiedClientsAnim{
-    0% {
-        width: 2vw;
-
-    }    
-
-
-    100% {
-        width: 20vw;
-
-    } */
-}
-
-/*  */
 /* -- large monitor -- */
 
 @media (min-width:2178px){

@@ -1,0 +1,113 @@
+@media (min-width:657px) and (max-width:1000px){
+    
+
+    .socialMedia{
+        /* position:relative; */
+        grid-column: 1/ span 100;
+        
+        transform: translate(0%,0%);
+        background-image: url("../en pic/En Tablet - top bg social media and lang.svg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        width:100%;
+        height: 12vh;
+    
+        z-index: 4;
+
+            /* Center the ul within this div */
+        display: flex;
+        /* align-items: center;  */
+        justify-content: center;
+    }
+    .socialMedia ul{
+        display: flex;
+        transform: translateY(11%);
+
+        justify-content: center;
+        width: 45%;
+
+        
+
+}
+.socialMedia img{
+    transform: translateY(-10%);
+
+}
+
+.lang{
+    grid-column: 87/span 100;
+    grid-row: 1;
+    /* color: black; */
+    display: flex;
+    align-items: center;
+    transform: translate(0%, -5%);
+
+}
+.lang ul{
+    flex-direction: row;
+    /* color: black; */
+    gap:15px;
+
+
+}
+.lang li:nth-child(1){
+    font-size: 1.6vw; 
+    font-weight: bold;
+
+}
+
+
+.lang li:nth-child(2) {
+
+    font-size: 1.5vw; 
+
+
+} 
+.lang_text{
+    color: black;
+
+}
+
+.addresses {
+    grid-column: 1/ span 100;
+    grid-row: 2;
+    /* grid-area: adr; */
+    /* width: 100%; */
+    z-index: 44;
+    /* height: -20px; */
+}
+    .menu{
+        position:relative;
+        /* visibility: hidden; */
+        /* margin-top: -0.3%; */
+        grid-column: 1/span 100;
+        grid-row:3;
+        background-image: url("../en pic/En Tablet - bg logo, menu and title.svg");
+        /* background-repeat: no-repeat;  */
+        /* width: 100%; */
+        /* transform: translate(0%,-11.5%); */
+        /* z-index: 5; */
+    }
+/* ------- logo ------ */
+.logo_photo_class{
+    /* background-color: tomato; */
+    /* opacity: 1; */
+    /* transform: translate(0%,16%); */
+    width:10vw;
+    height: 25vh;
+
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
+    background-image: url("../../icon/logo_dark_export.svg");
+    /* background-size:cover; */
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 10;
+
+    animation: logoAnimation 7s forwards ease-in-out;
+    animation-iteration-count: 1; /* Play only once */
+
+}
+
+
+}
+

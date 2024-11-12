@@ -33,17 +33,12 @@
     position:relative;
     grid-column: 1/ span 25;
     grid-row: 1;
-    /* grid-area:sM; */
+
     transform: translate(-1%,-4%);
     background-image: url("../en pic/En laptop social media bg - FFD700 laptop.svg");
     background-repeat: no-repeat;
-    /* background-color: black; */
     background-size: contain;
-    /* background-position: center; */
-    /* background-size: 100%;  */
-    /* width: 118.5%; */
-    /* height: 100px; */
-    /* order:2; */
+
     z-index: 4;
 
     
@@ -141,7 +136,7 @@
         width: 50%; 
          /* transform: translate(-20%, -15%); */
         /* background-color: red; */
-        z-index: 2;
+        z-index: 24;
         /* text-align: center; */
 
     }
@@ -187,27 +182,29 @@
 .logo{
     grid-column: 14/ span 15;
     grid-row: 1/span2;
-    /* grid-area:logo; */
     width:100%;
-    margin-bottom: 15%;
+    /* margin-bottom: 15%; */
     /* background-color: tomato; */
-    
     z-index: 10;
-
 }
 
-.logo img{
+.logo_photo_class{
     /* background-color: tomato; */
-    opacity: 0;
-    transform: translate(0%,16%);
-    width:75%;
-    /* box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); */
-    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
+    /* opacity: 1; */
+    /* transform: translate(0%,16%); */
+    width:10vw;
+    height: 25vh;
 
-    /* height: 230px; */
-    /* flex:1,1,15%; */
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
+    background-image: url("../../icon/Logo laptop and bg.svg");
+    /* background-size:cover; */
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 10;
+
     animation: logoAnimation 7s forwards ease-in-out;
     animation-iteration-count: 1; /* Play only once */
+
 }
 
 /* ------- menu -------- */
