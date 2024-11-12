@@ -75,7 +75,7 @@
     margin:0;
     padding: 0;
     z-index:0;
-    height: 9vh;
+    height: 10.5vh;
     /* transform: translateY(-15px); */
     /* width:100%; */
 
@@ -127,25 +127,38 @@
         grid-column: 1/span 100;
         grid-row:3;
         background-image: url("../en pic/En Tablet - bg logo, menu and title.svg");
-        /* background-repeat: no-repeat;  */
+        width: 100%;
+        /* background-size: 100%; */
+        height: 70hv;
+        background-position: center;
+        background-repeat: no-repeat; 
         /* width: 100%; */
         /* transform: translate(0%,-11.5%); */
         /* z-index: 5; */
     }
+    .menu ul {
+        visibility: hidden;
+    }
 /* ------- logo ------ */
 .logo{
-    grid-column: 1/ span 15;
+    grid-column: 20/ span 10;
     grid-row: 3;
     width:100%;
     /* margin-bottom: 15%; */
     /* background-color: tomato; */
     z-index: 10;
+    display: flex;
+    justify-content: center;
+    transform: translate(0%,-16%);
+
 }
 .logo_photo_class{
+    display: flex;
+    justify-content: center;
     /* background-color: tomato; */
     /* opacity: 1; */
     /* transform: translate(0%,16%); */
-    width:10vw;
+    width:14vw;
     height: 25vh;
 
     filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
@@ -159,10 +172,96 @@
     animation-iteration-count: 1; /* Play only once */
 
 }
+.humburger_Menu{
+    grid-column: 48/ span 4;
+    grid-row: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-bottom: -22%; */
+    transform: translateY(50%);
+    visibility: show;
+    opacity: 1;
+
+    background-image: url("../../icon/Humburger Menu.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 190%;
+    height: 10vh;
+    /* background-color: red; */
+    z-index: 100;
+}
 
 .title{
     grid-column: 75/ span 15;
     grid-row: 3;
+    display: flex;
+    align-items: center;
+    font-size: 3.8vw;
+    transform: translateY(-7%);
+
+
+}
+
+/* --- hero part --- */
+.hero{
+    margin-top: 45%;
+    width:100%;
+
+
+
+}
+.bgImageToAllHero{
+    display: flex;
+    grid-column: 1/ span 4;
+    grid-row: 1/ span 10;
+    width: 20%;
+
+    margin-left: -30%;
+    padding-left: 35%;
+
+
+
+}
+
+.fullScreenTransparent {
+
+    margin-left:-30% ;
+    padding-left: 35%;
+
+}
+
+
+
+.welcome{
+    grid-column: 4/span 20 ;
+
+    grid-row:2;
+}
+.dash{
+    font-size: 5vw;
+    transform: translateY(-60%);
+
+
+}
+.welcomText{
+    font-size: 2.5vw;
+
+
+}
+.slogan{
+    grid-column: 4/span 23 ;
+    font-size:4.5vw;
+    grid-row:3/span 10;
+
+
+
+}
+.heroDetails{
+    margin-top: 3.5%;
+    grid-column: 4/span 20 ;
+    grid-row:6/ span 3;
+    font-size: 2.5vw;
 
 
 }
@@ -170,5 +269,5 @@
 
 
 
-}
 
+}
