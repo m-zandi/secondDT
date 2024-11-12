@@ -40,7 +40,7 @@
     /* color: black; */
     display: flex;
     align-items: center;
-    transform: translate(0%, -5%);
+    transform: translate(0%, -14%);
 
 }
 .lang ul{
@@ -68,13 +68,57 @@
 
 }
 
+.bgTopHeader{
+    grid-column: 1 /span 100;
+    grid-row:2;
+    background-color:black;
+    margin:0;
+    padding: 0;
+    z-index:0;
+    height: 9vh;
+    /* transform: translateY(-15px); */
+    /* width:100%; */
+
+}
+
+
 .addresses {
     grid-column: 1/ span 100;
     grid-row: 2;
-    /* grid-area: adr; */
-    /* width: 100%; */
+
     z-index: 44;
-    /* height: -20px; */
+
+}
+
+.icon_address  {
+    width: 6vw; /* Adjust icon size */
+
+}
+.addresses ul {
+    gap: 2%;
+    margin-left: -4%; 
+    margin-top: .5%;
+    /* margin-right: .5%; */
+
+}
+.item {
+    /* transform: translateY(); */
+
+    gap: 6px;
+}
+.addresses_text {
+    /* font-family: 'AddressFont', sans-serif; */
+    font-size: 1.9vw;
+    /* color: white;   */
+}
+.item:nth-child(1){
+    flex-basis: 60%;
+}
+.item:nth-child(2){
+    flex-basis: 00%;
+}
+.item:nth-child(3){
+    flex-basis: 85%;
 }
     .menu{
         position:relative;
@@ -89,6 +133,14 @@
         /* z-index: 5; */
     }
 /* ------- logo ------ */
+.logo{
+    grid-column: 1/ span 15;
+    grid-row: 3;
+    width:100%;
+    /* margin-bottom: 15%; */
+    /* background-color: tomato; */
+    z-index: 10;
+}
 .logo_photo_class{
     /* background-color: tomato; */
     /* opacity: 1; */
@@ -107,6 +159,15 @@
     animation-iteration-count: 1; /* Play only once */
 
 }
+
+.title{
+    grid-column: 75/ span 15;
+    grid-row: 3;
+
+
+}
+
+
 
 
 }
