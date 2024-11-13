@@ -250,8 +250,8 @@
 
 .fullScreenTransparent {
 
-    margin-left:-30% ;
-    padding-left: 35%;
+    /* margin-left:-30% ;
+    padding-left: 35%; */
 
 }
 
@@ -275,7 +275,7 @@
 }
 .slogan{
     grid-column: 4/span 23 ;
-    font-size:5vw;
+    font-size:5.5vw;
     grid-row:3/span 4;
 
 
@@ -356,7 +356,7 @@ grid-row: 7;
 
     /* color: rgb(255, 215, 0); */
     transform: translateY(-20%);
-    font-size: 3vw;
+    /* font-size: 3vw; */
 }
 
 
@@ -401,13 +401,13 @@ grid-row: 7;
 .productIntro span:nth-child(1){
     transform: translateY(-2px);
  }
- .productIntro span:nth-child(2){
+ /* .productIntro span:nth-child(2){
     font-size:3vw;
- }
+ } */
 .productTitle{
     grid-column: 4/ span 35;
     grid-row: 2;
-    font-size: 4vw;
+    /* font-size: 4vw; */
     }
     .productDetails{
         grid-column: 4/ span 34;
@@ -427,9 +427,9 @@ grid-row: 7;
     }
 
 /* ---- footer ---- */
-.contactText{
+/* .contactText{
     font-size:3vw;
-}
+} */
 .footerSocial img{
     width:2.5vw;
     
@@ -440,6 +440,19 @@ grid-row: 7;
 .myAddress{
     grid-column: 28/span 10;
     font-size: 1.7vw;
+
+}
+/* - changing group of titles font sections - */
+.aboutCompany span:nth-child(2), .productIntro span:nth-child(2),.contactText
+    {
+        font-size:3vw;
+
+}
+/* - changing group of slogan font sections - */
+
+.aboutSlogan,.productTitle{
+    
+    font-size:4vw;
 
 }
 
