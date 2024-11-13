@@ -180,9 +180,11 @@
 
 /* ------- logo ------ */
 .logo{
-    grid-column: 14/ span 15;
+    grid-column: 15/ span 14;
     grid-row: 1/span2;
     width:100%;
+    /* margin-top: 20px; */
+    padding-top: 20px;
     /* margin-bottom: 15%; */
     /* background-color: tomato; */
     z-index: 10;
@@ -191,7 +193,7 @@
 .logo_photo_class{
     /* background-color: tomato; */
     /* opacity: 1; */
-    /* transform: translate(0%,16%); */
+    /* transform: translate(1%,15%); */
     width:10vw;
     height: 25vh;
 
@@ -297,3 +299,13 @@ z-index: 20;
 
 }
 
+/* <!-- -- tablet and mobile setting for menu -- --> */
+/* Parent container */
+.container_tabMo {
+visibility: hidden;
+opacity: 0;
+}
+
+
+
+/*  */

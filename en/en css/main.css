@@ -1,6 +1,9 @@
 
 
+html{
+    scroll-behavior: auto;
 
+}
 
 /* ================hero section=========== */
     .hero{
@@ -811,3 +814,4 @@
     flex-direction: row;
     margin-bottom: 30vh;
 }
+

@@ -106,7 +106,7 @@
     align-self: center;
 
     gap: 2%;
-    margin-left: -4%; 
+    margin-left: -5%; 
     /* margin-top: .5%; */
     /* margin-right: .5%; */
 
@@ -116,7 +116,7 @@
     display: flex;
     align-items: center;
     align-self: center;
-    gap: 6px;
+    gap: 4px;
     margin-bottom: 30px;
 
 }
@@ -135,9 +135,13 @@
     flex-basis: 85%;
 }
     .menu{
+        visibility: hidden;
+        opacity: 0;
+
+
         position:relative;
         grid-column: 1/span 100;
-        grid-row:3;
+        grid-row:4;
         background-image: url("../en pic/En Tablet - bg logo, menu and title.svg");
         background-size: 100%;
         background-position: center;
@@ -154,67 +158,73 @@
     grid-column: 14/ span 10;
     grid-row: 3;
     width:100%;
-    /* margin-bottom: 15%; */
-    /* background-color: tomato; */
+
     z-index: 10;
     display: flex;
-    /* justify-content: center; */
-    /* transform: translateY(10%); */
+
 
 }
-.logo_photo_class{
+
+.logo_photo_class_tabMo{
     display: flex;
-    /* justify-content: center;
-    align-self: center; */
-    /* transform: translateY(-5%); */
-    /* background-color: tomato; */
-    /* opacity: 1; */
-    /* transform: translate(0%,16%); */
     width:14vw;
     height: 25vh;
-
     filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
     background-image: url("../../icon/logo_dark_export.svg");
-    /* background-size:cover; */
     background-position: center;
     background-repeat: no-repeat;
     z-index: 10;
-
     animation: logoAnimation 7s forwards ease-in-out;
     animation-iteration-count: 1; /* Play only once */
 
 }
-.hamburger_Menu{
-    grid-column: 48/ span 4;
-    grid-row: 3;
-    display: flex;
+.hamburger_Menu_tabMo{
+    /* grid-column: 48/ span 4; */
+    /* grid-row: 3; */
+    /* display: flex; */
 
     background-image: url("../../icon/Humburger Menu.svg");
     background-repeat: no-repeat;
     background-size: contain;
+    background-position: center;
     width: 190%;
     height: 10vh;
 
     z-index: 100;
 }
 
-.title{
+.title_tabMo{
 
-    grid-column: 72/ span 15;
-    grid-row: 3;
+    /* grid-column: 72/ span 15; */
+    /* grid-row: 3; */
     font-size: 3.8vw;
+/* -- just for tabMo -- */
 
+
+font-family: 'davudtech_font', sans-serif; 
+color:black;
+text-shadow: 
+0px 0px 15px rgb(255, 215, 0), /* Top-left outline */
+0px 0px 15px rgb(255, 215, 0),  /* Top-right outline */
+0px 0px 0px rgb(255, 215, 0),  /* Bottom-left outline */
+0px 0px 0px rgb(255, 215, 0);   /* Bottom-right outline */
+opacity: 0;
+
+animation: titleAnimation 3s forwards ease-in-out;
+animation-iteration-count: 1; /* Play only once */
+/* animation-delay: 1s; */
 
 }
 
 /* -3 layer center set- */
 .title,.hamburger_Menu,.logo{
+    opacity:1;
+    visibility: hidden;
     position: absolute;
     align-items: center;
-    /* justify-content: center; */
+
     align-self: center;
-    /* transform: translateX(-50%); */
-    /* transform: translateY(-10%); */
+
     margin:0;
     padding: 0;
     left:0;
@@ -248,12 +258,7 @@
 
 }
 
-.fullScreenTransparent {
 
-    /* margin-left:-30% ;
-    padding-left: 35%; */
-
-}
 
 
 
@@ -261,6 +266,7 @@
     grid-column: 4/span 20 ;
 
     grid-row:2;
+    margin-top: 20%;
 }
 .dash{
     font-size: 5vw;
@@ -301,7 +307,9 @@
     grid-column: 6/span 28;
     grid-row: 1/span 6;
     margin-bottom: 30px;
-    /* width: 120%; */
+    /* width: 155vw; */
+    /* min-height: 80vh; */
+
 
 }
 /* - about animation -  */
@@ -456,5 +464,43 @@ grid-row: 7;
 
 }
 
+/* <!-- -- tablet and mobile setting for menu -- --> */
+/* Parent container */
+/* Parent container */
+
+
+.container_tabMo {
+    visibility:visible;
+    opacity: 1;
+    grid-column: 1 /span 100;
+    grid-row: 4;
+    display: flex;
+    justify-content: space-between; /* Distribute items evenly */
+    align-items: center; /* Center items vertically */
+    height: 14vh; /* Full height for demo, adjust as needed */
+    transform: translate(0%,0%);
+
+    z-index: 10;
+    /* -- container background image instead of menu -- */
+    height: 40vh; /* Full height or adjust as needed */
+    background-image: url("../en pic/En Tablet - bg logo, menu and title.svg");
+    background-size: 100%; /* Make the background cover the whole container */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent repeating */
+
+}
+
+/* Each child element taking 1/3 width */
+.logo_tabMo, .hamburger_Menu_tabMo, .title_tabMo {
+    flex: 1; /* Ensures each element takes an equal width (1/3) */
+    display: flex; /* Center content within each flex child */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    align-self: center;
+    transform: translate(0%,0%);
+}
+
+
+/*  */
 
 }
