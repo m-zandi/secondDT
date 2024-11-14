@@ -577,21 +577,8 @@ body {
     font-size: 4vw;
 }
 .close-btn {
-    /* hey */
-    /* color:white;
-    font-size: 5vw;
-    background-color: blue;
-    visibility: visible; 
-    opacity: 1;
-    font-size: 440px;
-    color: white;
-    background: none;
-    border: none;
-    cursor: pointer;
-    position: absolute; */
-    /* top: 20px; */
-    /* right: 20px; */
-    /* z-index: 33; */
+    color:white;
+       
 }
 
 .open-menu-btn {

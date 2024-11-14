@@ -792,9 +792,7 @@ html{
 }
 
 .moveUpper{
-
-    position: fixed;
-    /* display: flex; */
+    /* opacity: 1; */
     right:-240px;
     bottom: 40px;
     z-index: 100;
