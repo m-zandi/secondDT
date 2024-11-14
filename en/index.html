@@ -7,19 +7,16 @@
 
     <script type="module" src="./en js/enSideMenu.js"></script>
    <script>
-  function toggleMenu() {
+function toggleMenu() {
     const sideMenu = document.getElementById("sideMenu").querySelector("ul");
     const menuToggle = document.getElementById("menuToggle");
-
 
     // Toggle the side menu's visibility
     if (sideMenu.style.left === "0px") {
         sideMenu.style.left = "-60%"; // Close the menu
         menuToggle.innerHTML = "☰"; // Change hamburger icon to open
-        
     } else {
-        sideMenu.style.left = "0"; 
-        // Open the menu
+        sideMenu.style.left = "0"; // Open the menu
         menuToggle.innerHTML = "✕"; // Change to close icon
     }
 }
@@ -185,16 +182,14 @@ function scrollToFooter() {
 
     <!-- MENU -->
     <div class="menu" id="sideMenu">
-        
         <ul>
             <li><a href="#" onclick="toggleMenu()"><span class="menu_textBtn">×</span></a></li>
-            <li><a href="#" onclick="scrollToAbout()"><span class="menu_text">About us</span></a></li>
-            <li><a href="#" onclick="scrollToPortfolio()"><span class="menu_text">Portfolio</span></a></li>
+            <li><a href="#" onclick="scrollToAbout(); toggleMenu();"><span class="menu_text">About us</span></a></li>
+            <li><a href="#" onclick="scrollToPortfolio(); toggleMenu();"><span class="menu_text">Portfolio</span></a></li>
+            <li><a href="#" onclick="scrollToProducts(); toggleMenu();"><span class="menu_text">Products</span></a></li>
+            <li><a href="#" onclick="scrollToFooter(); toggleMenu();"><span class="menu_text">Contact</span></a></li>
 
-            <li><a href="#" onclick="scrollToProducts()"><span class="menu_text">Products</span></a></li>
-
-            <li class="menu_text"><a href="#" onclick="scrollToFooter()"><span class="menu_text">Contact</span></a></li>
-
+    
             
 
             <!-- <li class="learningsTxt"><a href=""><span class="menu_text">Learnings</span></a></li>

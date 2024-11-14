@@ -544,9 +544,13 @@ body {
     grid-row: 5;  */
     transform: translate(62vw,0);
     background-image: none;
+    background-image: url("../../icon/Open Menu.svg");
+    background-size: contain;
     visibility: visible; 
     opacity: 1;
     display: flex;
+    width: 100%;
+    height: 300px;
     /* grid-column: 1 /span 100; */
     /* grid-row: 5; */
     /* transform: translate(0,0); */
@@ -556,10 +560,10 @@ body {
     left: -60%; /* Off-screen by default */
     width: 30%; /* 1/3 width of the screen */
     height: 100%;
-    background-color: #4E4545;
+    /* background-color: #4E4545; */
     color: white;
     padding: 30px;
-    border-radius: 15px  15px 15px 15px;
+    border-radius: 15px  150px  150px  150px;
     transition: left 0.3s ease; /* Slide-in transition */
     z-index: 1000;
 }
