@@ -601,7 +601,9 @@ body {
     left: 20px; */
     /* z-index: 100; */
 }
-
+.menu_textBtn{
+    display: flex;
+}
 
 
 

@@ -387,5 +387,7 @@
     
         }
     }
-
+.menu_textBtn{
+    display: none;
+}
  }
