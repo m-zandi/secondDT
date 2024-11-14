@@ -5,8 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
+    <script type="module" src="./en js/enSideMenu.js"></script>
+   <script>
+  function toggleMenu() {
+    const sideMenu = document.getElementById("sideMenu").querySelector("ul");
+    const menuToggle = document.getElementById("menuToggle");
 
-    
+
+    // Toggle the side menu's visibility
+    if (sideMenu.style.right === "0px") {
+        sideMenu.style.right = "-40%"; // Close the menu
+        menuToggle.innerHTML = "☰"; // Change hamburger icon to open
+        
+    } else {
+        sideMenu.style.right = "0"; 
+        // Open the menu
+        menuToggle.innerHTML = "✕"; // Change to close icon
+    }
+}
+
+    </script>
     <script>
 // -- about us  menu click button --
 function scrollToAbout() {
@@ -166,33 +184,39 @@ function scrollToFooter() {
     </div>
 
     <!-- MENU -->
-    <div class="hamburger_Menu"></div>
-    <div class="menu">
+    <div class="menu" id="sideMenu">
+        
         <ul>
+            <li><a href="#" onclick="toggleMenu()"><span class="menu_textBtn">×</span></a></li>
             <li><a href="#" onclick="scrollToAbout()"><span class="menu_text">About us</span></a></li>
             <li><a href="#" onclick="scrollToPortfolio()"><span class="menu_text">Portfolio</span></a></li>
 
             <li><a href="#" onclick="scrollToProducts()"><span class="menu_text">Products</span></a></li>
 
-            <li class="menu_text"><a href="#" onclick="scrollToFooter()"><span class="menu_text">Contact Us</span></a></li>
+            <li class="menu_text"><a href="#" onclick="scrollToFooter()"><span class="menu_text">Contact</span></a></li>
+
+            
 
             <!-- <li class="learningsTxt"><a href=""><span class="menu_text">Learnings</span></a></li>
             <li class="resumeTxt"><a href=""><span class="menu_text">Resume</span></a></li> -->
         
 
-    </ul>
+        </ul>
     </div>
     <div class="title"><a href="https://www.davudtech.com/#" ><span class="title">DavudTech</span></a></div>
 
 <!-- -- tablet and mobile setting for menu -- -->
+    <!-- <button class="close-btn" onclick="toggleMenu()">×</butto> -->
 
-    <div class="container_tabMo">
+    <div class="container_bgMenu_tabMo">
         <div class="logo_tabMo">
             <a href="https://www.davudtech.com/#">
                 <div class="logo_photo_class_tabMo" id="logo_photo_tabMo"></div>
             </a>
         </div>
-        <div class="hamburger_Menu_tabMo"></div>
+        
+        <div class="hamburger_Menu_tabMo" id="menuToggle" onclick="toggleMenu()"></div>
+        
         <div class="title_tabMo">
             <a href="https://www.davudtech.com/#">
                 <span class="title_tabMo">DavudTech</span>

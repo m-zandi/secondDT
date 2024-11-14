@@ -89,8 +89,8 @@
 .addresses {
     grid-column: 1/ span 100;
     grid-row: 2;
-
-    z-index: 44;
+    height: 1px;
+    z-index: 20;
     /* display: flex; */
     
 
@@ -134,25 +134,7 @@
 .item:nth-child(3){
     flex-basis: 85%;
 }
-    .menu{
-        visibility: hidden;
-        opacity: 0;
 
-
-        position:relative;
-        grid-column: 1/span 100;
-        grid-row:4;
-        background-image: url("../en pic/En Tablet - bg logo, menu and title.svg");
-        background-size: 100%;
-        background-position: center;
-        background-repeat: no-repeat; 
-        width: 100%;
-        z-index: 5;
-        padding-bottom: 8%;
-    }
-    .menu ul {
-        visibility: hidden;
-    }
 /* ------- logo ------ */
 .logo{
     grid-column: 14/ span 10;
@@ -181,16 +163,26 @@
 .hamburger_Menu_tabMo{
     /* grid-column: 48/ span 4; */
     /* grid-row: 3; */
+    
+    /* display: inline-block; */
     /* display: flex; */
-
-    background-image: url("../../icon/Humburger Menu.svg");
+    list-style: none;
+    /* position: fixed; */
+    border: none; /* Remove the default border */
+    padding: 0; /* Remove padding */
+    cursor: pointer; /* Display a pointer cursor on hover */
+    outline: none; /* Remove outline when focused */
+    /* background-color: none; */
+    /* background-image: url("../../icon/Humburger Menu.svg"); */
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    width: 190%;
+    width: 3%;
     height: 10vh;
-
+    /* background-color: rgb(78, 69, 69); */
+    /* color:rgb(255, 215, 0); */
     z-index: 100;
+    font-size: 5vw;
 }
 
 .title_tabMo{
@@ -216,48 +208,34 @@ animation-iteration-count: 1; /* Play only once */
 
 }
 
-/* -3 layer center set- */
-.title,.hamburger_Menu,.logo{
-    opacity:1;
-    visibility: hidden;
-    position: absolute;
-    align-items: center;
-
-    align-self: center;
-
-    margin:0;
-    padding: 0;
-    left:0;
-    right:0;
-    bottom: 0;
-    top:0;
 
 
-}
+
 
 /* --- hero part --- */
 .hero{
-    margin-top: 45%;
+    margin-top: 40%;
     width:100%;
 
 
 
 }
+
+
+
 .bgImageToAllHero{
     display: flex;
     grid-column: 1/ span 40;
     grid-row: 1/ span 10;
-    /* width: 20%; */
-    /* visibility: hidden; */
-    /* padding-top: -40px;
-    margin-top: -40px; */
-    /* margin-left: -30%;
-    padding-left: 35%; */
+    background-position: center;
 
-
-
+    margin-left: -30%;
+    padding-left: 35%;
 }
-
+.fullScreenTransparent{
+    margin-left: -30%;
+    padding-left: 35%;
+ }
 
 
 
@@ -303,14 +281,28 @@ animation-iteration-count: 1; /* Play only once */
 
 }
 /* --------- about ---------- */
+
+
+
+
+
 .aboutImage{
-    grid-column: 6/span 28;
+    grid-column: 6/span 25;
     grid-row: 1/span 6;
     margin-bottom: 30px;
-    /* width: 155vw; */
+        background-size: 100%;
+        min-height: 48vh;
+    /* width: 98vw; */
     /* min-height: 80vh; */
+    background-position: center;
 
+}
+.yearsWork span:nth-child(1),.successRate  span:nth-child(1),.satisfiedClients  span:nth-child(1){
+    font-size: 2vw;
+}
 
+.yearsWork span:nth-child(2),.successRate  span:nth-child(2),.satisfiedClients  span:nth-child(2){
+    font-size: 2vw;
 }
 /* - about animation -  */
 @keyframes yearsWorkExAnim{
@@ -351,7 +343,7 @@ animation-iteration-count: 1; /* Play only once */
 
 
 .aboutCompany{
-grid-column: 6/span 28;
+grid-column: 6/span 25;
 grid-row: 7;
 }
 .aboutCompany span:nth-child(1){
@@ -467,31 +459,46 @@ grid-row: 7;
 /* <!-- -- tablet and mobile setting for menu -- --> */
 /* Parent container */
 /* Parent container */
-
-
-.container_tabMo {
-    visibility:visible;
-    opacity: 1;
-    grid-column: 1 /span 100;
-    grid-row: 4;
-    display: flex;
-    justify-content: space-between; /* Distribute items evenly */
-    align-items: center; /* Center items vertically */
-    height: 14vh; /* Full height for demo, adjust as needed */
-    transform: translate(0%,0%);
-
-    z-index: 10;
-    /* -- container background image instead of menu -- */
-    height: 40vh; /* Full height or adjust as needed */
-    background-image: url("../en pic/En Tablet - bg logo, menu and title.svg");
-    background-size: 100%; /* Make the background cover the whole container */
-    background-position: center; /* Center the background image */
-    background-repeat: no-repeat; /* Prevent repeating */
+.title,.hamburger_Menu,.logo{
+    opacity:0;
+    visibility: hidden;
+    display: none;
 
 }
 
+
+.container_bgMenu_tabMo {
+    visibility:visible;
+    opacity: 1;
+    /* display:flex; */
+    position: relative;
+    /* margin-bottom: 220px;
+    padding-bottom: -2220px; */
+    grid-column: 1 /span 100;
+    grid-row: 3;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    transform: translate(0%,-12%);
+
+    z-index: 15;
+    
+    height: 49vh; 
+    background-image: url("../en pic/En Tablet - bg logo, menu and title.svg");
+    background-size: 100%; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    /* list-style: none; */
+    /* background-color: aqua; */
+    /* z-index: 120000; */
+
+}
 /* Each child element taking 1/3 width */
 .logo_tabMo, .hamburger_Menu_tabMo, .title_tabMo {
+    visibility: visible;
+    opacity: 1;
+     /* display:flex; */
+
     flex: 1; /* Ensures each element takes an equal width (1/3) */
     display: flex; /* Center content within each flex child */
     justify-content: center; /* Center horizontally */
@@ -503,4 +510,101 @@ grid-row: 7;
 
 /*  */
 
+/* - menu part-  */
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
+
+.menu{
+    visibility: visible; 
+    opacity: 1; 
+     /* grid-column: 1 /span 100;
+    grid-row: 6;  */
+    background-image: none;
+    grid-row: auto;
+    z-index: 30;
+    transform: translate(0,0);
+    /* background-color: blue; */
+    display: flex;
+    position: fixed;
+    transform: translate(-60%,0);
+    flex-direction: column;
+    /* grid-column: 1 /span 100;
+    grid-row: 5; */
+    top: 0;
+    right: -33%; /* Off-screen by default */
+    width: 40%; /* 1/3 width of the screen */
+    height: 100%;
+
+}
+.menu ul{
+    /* grid-column: 1 /span 100;
+    grid-row: 5;  */
+    transform: translate(-90%,0);
+    background-image: none;
+    visibility: visible; 
+    opacity: 1;
+    display: flex;
+    grid-column: 1 /span 100;
+    grid-row: 5;
+    /* transform: translate(0,0); */
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: -40%; /* Off-screen by default */
+    width: 30%; /* 1/3 width of the screen */
+    height: 100%;
+    background-color: #4E4545;
+    color: white;
+    padding: 30px;
+    border-radius: 15%;
+    transition: right 0.3s ease; /* Slide-in transition */
+    z-index: 1000;
+}
+.menu ul li:nth-child(1){
+    /* color:white; */
+    font-size: 5vw;
+    /* background-color: blue;  */
+}
+.menu_text{
+    /* background-color: red; */
+    font-size: 4vw;
+}
+.close-btn {
+    /* color:white;
+    font-size: 5vw;
+    background-color: blue;
+    visibility: visible; 
+    opacity: 1;
+    font-size: 440px;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute; */
+    /* top: 20px; */
+    /* right: 20px; */
+    /* z-index: 33; */
+}
+
+.open-menu-btn {
+     /* font-size: 30px; */
+    padding: 10px; 
+    /* background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    position: absolute;  */
+    /* top: 20px;
+    left: 20px; */
+    /* z-index: 100; */
+}
+
+
+
+
+
+}
+

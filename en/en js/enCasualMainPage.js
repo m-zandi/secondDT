@@ -42,7 +42,7 @@ function customScrollToTop(speed) {
 scrollToTopBtn.addEventListener('click', (e) => {
     e.preventDefault(); // Prevent default anchor behavior
 
-    customScrollToTop(500000); // Pass the desired scroll speed in milliseconds
+    customScrollToTop(300000); // Pass the desired scroll speed in milliseconds
 });
 
 // Add scroll event listener to trigger the show/hide function
