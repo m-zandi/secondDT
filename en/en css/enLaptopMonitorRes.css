@@ -10,9 +10,7 @@
     .addresses {
         grid-column: 18/ span 80;
     }
-    .addresses ul{
-        transform: translateY(-32%);
-    }
+
     .item:nth-child(1){
         flex-basis: 45%;
     }
@@ -41,6 +39,7 @@
 
         /* -- menu -- */
         .menu{
+            position:relative;
             margin-top: -1.5%;
     
         }
@@ -121,22 +120,6 @@
 
     }
 
-    /* -- address -- */
-    .addresses {
-        grid-column: 18/ span 80;
-    }
-    .addresses ul{
-        transform: translateY(-32%);
-    }
-    .item:nth-child(1){
-        flex-basis: 45%;
-    }
-    .item:nth-child(2){
-        flex-basis: 58%;
-    }
-    .item:nth-child(3){
-        flex-basis: 65%;
-    }
 
 
     /* -- lang header -- */
@@ -238,9 +221,7 @@
 
 @media (min-width:1279px) and (max-width:1881px){
 
-    .addresses ul{
-        transform: translateY(-32%);
-    }
+
 
 
 

@@ -8,27 +8,32 @@
 
     <!-- -- open menu -- -->
     <script>
-        function toggleMenu() {
+// Variables to track scroll behavior
+let initialScrollPosition = 0;
+let menuOpen = false;
+
+function toggleMenu() {
     const sideMenu = document.getElementById("sideMenu");
-    const menuToggle = document.getElementById("menuToggle");
 
     // Toggle the side menu's visibility
     if (sideMenu.style.left === "0px") {
-        sideMenu.style.left = "-60%"; // Close the menu to the left
-        menuToggle.innerHTML = "☰"; // Change to hamburger icon
+        sideMenu.style.left = "-60%"; // Close the menu
+        menuOpen = false; // Update the menu state
     } else {
-        sideMenu.style.left = "0"; // Open the menu from the left
-        // menuToggle.innerHTML = "✕"; // Change to close icon
+        sideMenu.style.left = "0"; // Open the menu
+        menuOpen = true; // Update the menu state
+        initialScrollPosition = window.scrollY; // Store initial scroll position when menu opens
     }
 }
 
-// New function: hideMenuOnScroll
+// Function: hideMenuOnScroll after 100px scroll
 function hideMenuOnScroll() {
     const sideMenu = document.getElementById("sideMenu");
 
-    // Check if the menu is open
-    if (sideMenu.style.left === "0px") {
-        sideMenu.style.left = "-60%"; // Close the menu on scroll
+    // Check if menu is open and if scrolled more than 100px from the initial position
+    if (menuOpen && Math.abs(window.scrollY - initialScrollPosition) > 400) {
+        sideMenu.style.left = "-60%"; // Close the menu
+        menuOpen = false; // Update menu state
     }
 }
 
@@ -212,7 +217,7 @@ function scrollToFooter() {
     <div class="title"><a href="https://www.davudtech.com/#" ><span class="title">DavudTech</span></a></div>
 
 <!-- -- tablet and mobile setting for menu -- -->
-    <!-- <button class="close-btn" onclick="toggleMenu()">×</butto> -->
+    
 
     <div class="container_bgMenu_tabMo">
         <div class="logo_tabMo">
