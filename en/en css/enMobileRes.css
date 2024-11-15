@@ -255,15 +255,19 @@ animation-iteration-count: 1; /* Play only once */
 
 
 .bgImageToAllHero{
-    display: flex;
-    grid-column: 1/ span 40;
-    grid-row: 1/ span 10;
-    background-size: 150vw;
-    /* background-position: center; */
-    /* position: fixed; */
-    margin-left: -140%; 
-    padding-left: 140%; 
-    /* width:50%; */
+
+    /* display:flex; */
+    /* height:21vh; */
+    height: 54vh !important;
+    top:0;
+    bottom:0;
+    /* padding-top: 12vw; */
+    /* background-size:cover !important ; */
+    background-size: 140% !important; 
+    /* Scale the image */
+    background-position: -220px -220px !important;
+    margin-top: 10% !important;
+
 }
 .fullScreenTransparent{
     /* margin-left: -30%; */
@@ -613,7 +617,112 @@ body {
 
 }
 
+@media(max-width:348px){
 
+    .bgImageToAllHero{
+
+        /* display:flex; */
+        /* height:21vh; */
+        height: 54vh !important;
+        top:0;
+        bottom:0;
+        /* padding-top: 12vw; */
+        /* background-size:cover !important ; */
+        background-size: 140% !important; 
+        /* Scale the image */
+        background-position: -130px 80px !important;
+        margin-top: 20% !important;
+    
+    }
+}
 
 
  
+@media (min-width:569px) and (max-width:656px){
+    .bgImageToAllHero{
+    
+        /* display:flex; */
+        /* height:21vh; */
+        height: 66vh !important;
+        top:0;
+        bottom:0;
+        /* padding-top: 12vw; */
+        /* background-size:cover !important ; */
+        background-size: 140% !important; 
+        /* Scale the image */
+        background-position: -180px -60px !important;
+        margin-top: 10% !important;
+    
+    }
+}
+
+@media (min-width:530px) and (max-width:568px){
+    .bgImageToAllHero{
+    
+        /* display:flex; */
+        /* height:21vh; */
+        height: 66vh !important;
+        top:0;
+        bottom:0;
+        /* padding-top: 12vw; */
+        /* background-size:cover !important ; */
+        background-size: 140% !important; 
+        /* Scale the image */
+        background-position: -190px -10px !important;
+        margin-top: 10% !important;
+    
+    }
+}
+
+@media (min-width:443px) and (max-width:528px){
+    .bgImageToAllHero{
+        
+        /* display:flex; */
+        /* height:21vh; */
+        height: 66vh !important;
+        top:0;
+        bottom:0;
+        /* padding-top: 12vw; */
+        /* background-size:cover !important ; */
+        background-size: 140% !important; 
+        /* Scale the image */
+        background-position: -150px 70px !important;
+        margin-top: 10% !important;
+    
+    }
+}
+
+@media (min-width:404px) and (max-width:442px){
+    .bgImageToAllHero{
+        
+        /* display:flex; */
+        /* height:21vh; */
+        height: 66vh !important;
+        top:0;
+        bottom:0;
+        /* padding-top: 12vw; */
+        /* background-size:cover !important ; */
+        background-size: 140% !important; 
+        /* Scale the image */
+        background-position: -140px 130px !important;
+        margin-top: 10% !important;
+    
+    }
+}
+@media (min-width:348px) and (max-width:403px){
+    .bgImageToAllHero{
+        
+        /* display:flex; */
+        /* height:21vh; */
+        height: 66vh !important;
+        top:0;
+        bottom:0;
+        /* padding-top: 12vw; */
+        /* background-size:cover !important ; */
+        background-size: 140% !important; 
+        /* Scale the image */
+        background-position: -120px 170px !important;
+        margin-top: 10% !important;
+    
+    }
+}

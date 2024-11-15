@@ -237,13 +237,11 @@ animation-iteration-count: 1; /* Play only once */
 
 
 .bgImageToAllHero{
-    display: flex;
-    grid-column: 1/ span 40;
-    grid-row: 1/ span 10;
-    background-position: center;
-    /* position: fixed; */
-    /* margin-left: -30%; */
-    /* padding-left: 35%; */
+        /* height: 100vh !important;
+        top:0;
+        bottom:0;
+        background-size: 140% !important; 
+        background-position: -330px -160px !important; */
 }
 .fullScreenTransparent{
     /* margin-left: -30%; */
@@ -587,7 +585,86 @@ body {
 
 
 
-
+@media (min-width:900px) and (max-width:1000px){
 
 }
 
+.bgImageToAllHero{
+
+        /* display:flex; */
+        /* height:21vh; */
+        height: 100vh !important;
+        top:0;
+        bottom:0;
+        /* padding-top: 12vw; */
+        /* background-size:cover !important ; */
+        background-size: 140% !important; 
+        /* Scale the image */
+        background-position: -330px -160px !important;
+        /* margin-top: 10% !important; */
+
+}
+}
+
+@media (min-width:800px) and (max-width:899px){
+
+
+
+.bgImageToAllHero{
+
+        /* display:flex; */
+        /* height:21vh; */
+        height: 100vh !important;
+        top:0;
+        bottom:0;
+        /* padding-top: 12vw; */
+        /* background-size:cover !important ; */
+        background-size: 140% !important; 
+        /* Scale the image */
+        background-position: -300px -80px !important;
+        /* margin-top: 10% !important; */
+
+}
+}
+
+@media (min-width:700px) and (max-width:799px){
+
+
+
+    .bgImageToAllHero{
+    
+            /* display:flex; */
+            /* height:21vh; */
+            height: 100vh !important;
+            top:0;
+            bottom:0;
+            /* padding-top: 12vw; */
+            /* background-size:cover !important ; */
+            background-size: 140% !important; 
+            /* Scale the image */
+            background-position: -270px 40px !important;
+            /* margin-top: 10% !important; */
+    
+    }
+    }
+
+ @media (min-width:657px) and (max-width:699px){
+
+
+
+.bgImageToAllHero{
+
+        /* display:flex; */
+        /* height:21vh; */
+        height: 100vh !important;
+        top:0;
+        bottom:0;
+        /* padding-top: 12vw; */
+        /* background-size:cover !important ; */
+        background-size: 140% !important; 
+        /* Scale the image */
+        background-position: -230px 150px !important;
+        /* margin-top: 10% !important; */
+
+}
+        }
