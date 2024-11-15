@@ -18,10 +18,22 @@
         menuToggle.innerHTML = "☰"; // Change to hamburger icon
     } else {
         sideMenu.style.left = "0"; // Open the menu from the left
-        menuToggle.innerHTML = "✕"; // Change to close icon
+        // menuToggle.innerHTML = "✕"; // Change to close icon
     }
 }
 
+// New function: hideMenuOnScroll
+function hideMenuOnScroll() {
+    const sideMenu = document.getElementById("sideMenu");
+
+    // Check if the menu is open
+    if (sideMenu.style.left === "0px") {
+        sideMenu.style.left = "-60%"; // Close the menu on scroll
+    }
+}
+
+// Attach scroll event listener
+window.addEventListener("scroll", hideMenuOnScroll);
 
 
 
