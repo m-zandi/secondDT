@@ -9,38 +9,39 @@
     <!-- -- open menu -- -->
     <script>
 // Variables to track scroll behavior
-let initialScrollPosition = 0;
 let menuOpen = false;
 
 function toggleMenu() {
     const sideMenu = document.getElementById("sideMenu");
 
-    // Toggle the side menu's visibility
-    if (sideMenu.style.left === "0px") {
-        sideMenu.style.left = "-60%"; // Close the menu
-        menuOpen = false; // Update the menu state
+    // Toggle menu visibility
+    if (menuOpen) {
+        sideMenu.style.top = "-100%"; // Slide menu out
+        menuOpen = false; // Update state
     } else {
-        sideMenu.style.left = "0"; // Open the menu
-        menuOpen = true; // Update the menu state
-        initialScrollPosition = window.scrollY; // Store initial scroll position when menu opens
+        sideMenu.style.top = "0"; // Slide menu in
+        menuOpen = true; // Update state
     }
 }
 
-// Function: hideMenuOnScroll after 100px scroll
+// Close the menu on scroll after moving 100px
+let initialScrollPosition = 0;
+
 function hideMenuOnScroll() {
     const sideMenu = document.getElementById("sideMenu");
 
-    // Check if menu is open and if scrolled more than 100px from the initial position
-    if (menuOpen && Math.abs(window.scrollY - initialScrollPosition) > 400) {
-        sideMenu.style.left = "-60%"; // Close the menu
-        menuOpen = false; // Update menu state
+    if (menuOpen && Math.abs(window.scrollY - initialScrollPosition) > 100) {
+        sideMenu.style.top = "-100%"; // Slide menu out
+        menuOpen = false; // Update state
     }
 }
 
-// Attach scroll event listener
-window.addEventListener("scroll", hideMenuOnScroll);
-
-
+window.addEventListener("scroll", () => {
+    if (menuOpen) {
+        initialScrollPosition = window.scrollY;
+        hideMenuOnScroll();
+    }
+});
 
     </script>
    
